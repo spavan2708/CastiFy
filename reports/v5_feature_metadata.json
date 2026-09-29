@@ -1,0 +1,586 @@
+{
+  "Return_Lag_1": {
+    "name": "Return_Lag_1",
+    "family": "returns",
+    "description": "Daily_Return shifted back 1 trading rows.",
+    "minimum_raw_rows": 3,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_Lag_2": {
+    "name": "Return_Lag_2",
+    "family": "returns",
+    "description": "Daily_Return shifted back 2 trading rows.",
+    "minimum_raw_rows": 4,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_Lag_3": {
+    "name": "Return_Lag_3",
+    "family": "returns",
+    "description": "Daily_Return shifted back 3 trading rows.",
+    "minimum_raw_rows": 5,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_Lag_5": {
+    "name": "Return_Lag_5",
+    "family": "returns",
+    "description": "Daily_Return shifted back 5 trading rows.",
+    "minimum_raw_rows": 7,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_1D": {
+    "name": "Return_1D",
+    "family": "returns",
+    "description": "Close / Close.shift(1) - 1; trailing compounded return.",
+    "minimum_raw_rows": 2,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_2D": {
+    "name": "Return_2D",
+    "family": "returns",
+    "description": "Close / Close.shift(2) - 1; trailing compounded return.",
+    "minimum_raw_rows": 3,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_3D": {
+    "name": "Return_3D",
+    "family": "returns",
+    "description": "Close / Close.shift(3) - 1; trailing compounded return.",
+    "minimum_raw_rows": 4,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_5D": {
+    "name": "Return_5D",
+    "family": "returns",
+    "description": "Close / Close.shift(5) - 1; trailing compounded return.",
+    "minimum_raw_rows": 6,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_10D": {
+    "name": "Return_10D",
+    "family": "returns",
+    "description": "Close / Close.shift(10) - 1; trailing compounded return.",
+    "minimum_raw_rows": 11,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_20D": {
+    "name": "Return_20D",
+    "family": "returns",
+    "description": "Close / Close.shift(20) - 1; trailing compounded return.",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_60D": {
+    "name": "Return_60D",
+    "family": "returns",
+    "description": "Close / Close.shift(60) - 1; trailing compounded return.",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Intraday_Return": {
+    "name": "Intraday_Return",
+    "family": "price_structure",
+    "description": "Close / Open - 1",
+    "minimum_raw_rows": 1,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Overnight_Gap": {
+    "name": "Overnight_Gap",
+    "family": "price_structure",
+    "description": "Open / previous Close - 1",
+    "minimum_raw_rows": 2,
+    "normalized": true,
+    "future_safe": true
+  },
+  "High_Low_Range": {
+    "name": "High_Low_Range",
+    "family": "price_structure",
+    "description": "(High - Low) / Close",
+    "minimum_raw_rows": 1,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Close_Open_Position": {
+    "name": "Close_Open_Position",
+    "family": "price_structure",
+    "description": "(Close - Open) / (High - Low); zero on a flat bar",
+    "minimum_raw_rows": 1,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Range_Position_20": {
+    "name": "Range_Position_20",
+    "family": "price_structure",
+    "description": "(Close - rolling Low.min(20)) / (rolling High.max(20) - rolling Low.min(20)); flat range=0.5",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_5": {
+    "name": "Price_to_SMA_5",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 5) - 1",
+    "minimum_raw_rows": 5,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_10": {
+    "name": "Price_to_SMA_10",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 10) - 1",
+    "minimum_raw_rows": 10,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_20": {
+    "name": "Price_to_SMA_20",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 20) - 1",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_50": {
+    "name": "Price_to_SMA_50",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 50) - 1",
+    "minimum_raw_rows": 50,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_100": {
+    "name": "Price_to_SMA_100",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 100) - 1",
+    "minimum_raw_rows": 100,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_SMA_200": {
+    "name": "Price_to_SMA_200",
+    "family": "price_structure",
+    "description": "Close / rolling mean(Close, 200) - 1",
+    "minimum_raw_rows": 200,
+    "normalized": true,
+    "future_safe": true
+  },
+  "SMA_5_to_20": {
+    "name": "SMA_5_to_20",
+    "family": "price_structure",
+    "description": "SMA_5 / SMA_20 - 1",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "SMA_20_to_50": {
+    "name": "SMA_20_to_50",
+    "family": "price_structure",
+    "description": "SMA_20 / SMA_50 - 1",
+    "minimum_raw_rows": 50,
+    "normalized": true,
+    "future_safe": true
+  },
+  "SMA_50_to_200": {
+    "name": "SMA_50_to_200",
+    "family": "price_structure",
+    "description": "SMA_50 / SMA_200 - 1",
+    "minimum_raw_rows": 200,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Distance_From_20D_High": {
+    "name": "Distance_From_20D_High",
+    "family": "price_structure",
+    "description": "Close / rolling max(High, 20) - 1 (intraday highs)",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Distance_From_20D_Low": {
+    "name": "Distance_From_20D_Low",
+    "family": "price_structure",
+    "description": "Close / rolling min(Low, 20) - 1 (intraday lows)",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Log_Price_Slope_20": {
+    "name": "Log_Price_Slope_20",
+    "family": "momentum",
+    "description": "OLS slope of log Close against 0..19; log-return units per trading row",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Distance_From_60D_High": {
+    "name": "Distance_From_60D_High",
+    "family": "price_structure",
+    "description": "Close / rolling max(High, 60) - 1 (intraday highs)",
+    "minimum_raw_rows": 60,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Distance_From_60D_Low": {
+    "name": "Distance_From_60D_Low",
+    "family": "price_structure",
+    "description": "Close / rolling min(Low, 60) - 1 (intraday lows)",
+    "minimum_raw_rows": 60,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Log_Price_Slope_60": {
+    "name": "Log_Price_Slope_60",
+    "family": "momentum",
+    "description": "OLS slope of log Close against 0..59; log-return units per trading row",
+    "minimum_raw_rows": 60,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Drawdown_From_20D_Peak": {
+    "name": "Drawdown_From_20D_Peak",
+    "family": "price_structure",
+    "description": "Close / rolling max(Close, 20) - 1; nonpositive",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Drawdown_From_60D_Peak": {
+    "name": "Drawdown_From_60D_Peak",
+    "family": "price_structure",
+    "description": "Close / rolling max(Close, 60) - 1; nonpositive",
+    "minimum_raw_rows": 60,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Drawdown_From_252D_Peak": {
+    "name": "Drawdown_From_252D_Peak",
+    "family": "price_structure",
+    "description": "Close / rolling max(Close, 252) - 1; nonpositive",
+    "minimum_raw_rows": 252,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_EMA_5": {
+    "name": "Price_to_EMA_5",
+    "family": "momentum",
+    "description": "Close / EMA(span=5, adjust=False, min_periods=5) - 1; seeded with first close",
+    "minimum_raw_rows": 5,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_EMA_10": {
+    "name": "Price_to_EMA_10",
+    "family": "momentum",
+    "description": "Close / EMA(span=10, adjust=False, min_periods=10) - 1; seeded with first close",
+    "minimum_raw_rows": 10,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_EMA_20": {
+    "name": "Price_to_EMA_20",
+    "family": "momentum",
+    "description": "Close / EMA(span=20, adjust=False, min_periods=20) - 1; seeded with first close",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Price_to_EMA_50": {
+    "name": "Price_to_EMA_50",
+    "family": "momentum",
+    "description": "Close / EMA(span=50, adjust=False, min_periods=50) - 1; seeded with first close",
+    "minimum_raw_rows": 50,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_5D_Acceleration": {
+    "name": "Return_5D_Acceleration",
+    "family": "momentum",
+    "description": "Return_5D - previous row's Return_5D",
+    "minimum_raw_rows": 7,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_5": {
+    "name": "Volatility_5",
+    "family": "volatility",
+    "description": "Trailing 5 Daily_Return sample standard deviation, ddof=1",
+    "minimum_raw_rows": 6,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_10": {
+    "name": "Volatility_10",
+    "family": "volatility",
+    "description": "Trailing 10 Daily_Return sample standard deviation, ddof=1",
+    "minimum_raw_rows": 11,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_20": {
+    "name": "Volatility_20",
+    "family": "volatility",
+    "description": "Trailing 20 Daily_Return sample standard deviation, ddof=1",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_60": {
+    "name": "Volatility_60",
+    "family": "volatility",
+    "description": "Trailing 60 Daily_Return sample standard deviation, ddof=1",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_Ratio_5_20": {
+    "name": "Volatility_Ratio_5_20",
+    "family": "volatility",
+    "description": "Volatility_5 / Volatility_20; zero denominator undefined",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volatility_Ratio_20_60": {
+    "name": "Volatility_Ratio_20_60",
+    "family": "volatility",
+    "description": "Volatility_20 / Volatility_60; zero denominator undefined",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Mean_Return_5": {
+    "name": "Rolling_Mean_Return_5",
+    "family": "volatility",
+    "description": "Arithmetic mean of last 5 daily returns",
+    "minimum_raw_rows": 6,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Mean_Return_20": {
+    "name": "Rolling_Mean_Return_20",
+    "family": "volatility",
+    "description": "Arithmetic mean of last 20 daily returns",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Mean_Return_60": {
+    "name": "Rolling_Mean_Return_60",
+    "family": "volatility",
+    "description": "Arithmetic mean of last 60 daily returns",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Skew_20": {
+    "name": "Rolling_Skew_20",
+    "family": "volatility",
+    "description": "Pandas unbiased rolling sample skew of 20 daily returns",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Kurtosis_20": {
+    "name": "Rolling_Kurtosis_20",
+    "family": "volatility",
+    "description": "Pandas unbiased Fisher excess kurtosis of 20 returns (normal=0)",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Skew_60": {
+    "name": "Rolling_Skew_60",
+    "family": "volatility",
+    "description": "Pandas unbiased rolling sample skew of 60 daily returns",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Rolling_Kurtosis_60": {
+    "name": "Rolling_Kurtosis_60",
+    "family": "volatility",
+    "description": "Pandas unbiased Fisher excess kurtosis of 60 returns (normal=0)",
+    "minimum_raw_rows": 61,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Positive_Return_Ratio_20": {
+    "name": "Positive_Return_Ratio_20",
+    "family": "volatility",
+    "description": "Fraction of 20 valid daily returns > 0; zeros count in denominator",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Negative_Return_Ratio_20": {
+    "name": "Negative_Return_Ratio_20",
+    "family": "volatility",
+    "description": "Fraction of 20 valid daily returns < 0; zeros count in denominator",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Downside_Volatility_20": {
+    "name": "Downside_Volatility_20",
+    "family": "volatility",
+    "description": "Sample std of returns < 0 inside 20-return window; NaN with fewer than 2 qualifying values",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Upside_Volatility_20": {
+    "name": "Upside_Volatility_20",
+    "family": "volatility",
+    "description": "Sample std of returns > 0 inside 20-return window; NaN with fewer than 2 qualifying values",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volume_Change": {
+    "name": "Volume_Change",
+    "family": "volume",
+    "description": "Volume / previous Volume - 1; zero denominator undefined",
+    "minimum_raw_rows": 2,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Relative_Volume_5": {
+    "name": "Relative_Volume_5",
+    "family": "volume",
+    "description": "Volume / rolling mean(Volume, 5); zero denominator undefined",
+    "minimum_raw_rows": 5,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Relative_Volume_20": {
+    "name": "Relative_Volume_20",
+    "family": "volume",
+    "description": "Volume / rolling mean(Volume, 20); zero denominator undefined",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Volume_Return_Correlation_20": {
+    "name": "Volume_Return_Correlation_20",
+    "family": "volume",
+    "description": "Pearson correlation of 20 paired Volume_Change and Daily_Return values; constant input undefined",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "OBV_Flow_20": {
+    "name": "OBV_Flow_20",
+    "family": "volume",
+    "description": "sum(sign(Daily_Return) * Volume, 20) / sum(Volume, 20); normalized trailing OBV change",
+    "minimum_raw_rows": 21,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Return_x_VolumeChange": {
+    "name": "Return_x_VolumeChange",
+    "family": "volume",
+    "description": "Daily_Return * Volume_Change; signed return amplified by volume change",
+    "minimum_raw_rows": 2,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Momentum_x_RelativeVolume": {
+    "name": "Momentum_x_RelativeVolume",
+    "family": "volume",
+    "description": "Return_5D * Relative_Volume_20; trailing momentum weighted by volume participation",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "RSI_14": {
+    "name": "RSI_14",
+    "family": "technical",
+    "description": "Wilder gain/loss averages seeded with first 14 changes; 100 for gain-only, 0 for loss-only, 50 if both zero",
+    "minimum_raw_rows": 15,
+    "normalized": true,
+    "future_safe": true
+  },
+  "MACD_Pct": {
+    "name": "MACD_Pct",
+    "family": "technical",
+    "description": "(EMA_12 - EMA_26) / Close",
+    "minimum_raw_rows": 26,
+    "normalized": true,
+    "future_safe": true
+  },
+  "MACD_Signal_Pct": {
+    "name": "MACD_Signal_Pct",
+    "family": "technical",
+    "description": "EMA_9(raw MACD) / Close",
+    "minimum_raw_rows": 34,
+    "normalized": true,
+    "future_safe": true
+  },
+  "MACD_Histogram_Pct": {
+    "name": "MACD_Histogram_Pct",
+    "family": "technical",
+    "description": "(raw MACD - raw signal) / Close",
+    "minimum_raw_rows": 34,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Bollinger_Position": {
+    "name": "Bollinger_Position",
+    "family": "technical",
+    "description": "(Close - lower) / (upper - lower), bands=SMA_20 +/- 2 population std; flat=0.5",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "Bollinger_Width": {
+    "name": "Bollinger_Width",
+    "family": "technical",
+    "description": "(upper - lower) / SMA_20",
+    "minimum_raw_rows": 20,
+    "normalized": true,
+    "future_safe": true
+  },
+  "ATR_14_Pct": {
+    "name": "ATR_14_Pct",
+    "family": "technical",
+    "description": "Wilder mean of True Range / Close; first TR=High-Low; 14-TR arithmetic seed",
+    "minimum_raw_rows": 14,
+    "normalized": true,
+    "future_safe": true
+  },
+  "MA_5": {
+    "name": "MA_5",
+    "family": "basic",
+    "description": "Unchanged baseline rolling mean(Close, 5); absolute adjusted price",
+    "minimum_raw_rows": 5,
+    "normalized": false,
+    "future_safe": true
+  },
+  "MA_20": {
+    "name": "MA_20",
+    "family": "basic",
+    "description": "Unchanged baseline rolling mean(Close, 20); absolute adjusted price",
+    "minimum_raw_rows": 20,
+    "normalized": false,
+    "future_safe": true
+  },
+  "MA_50": {
+    "name": "MA_50",
+    "family": "basic",
+    "description": "Unchanged baseline rolling mean(Close, 50); absolute adjusted price",
+    "minimum_raw_rows": 50,
+    "normalized": false,
+    "future_safe": true
+  }
+}

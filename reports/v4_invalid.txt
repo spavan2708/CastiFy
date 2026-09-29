@@ -1,0 +1,11 @@
+============================================
+                 CASTIFY
+      Quantitative Forecasting Engine
+============================================
+Enter stock ticker: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: THISDOESNOTEXIST123"}}}
+$THISDOESNOTEXIST123: possibly delisted; no timezone found
+
+1 Failed download:
+['THISDOESNOTEXIST123']: possibly delisted; no timezone found
+Analyzing THISDOESNOTEXIST123...
+CastiFy: Unable to retrieve usable market data for "THISDOESNOTEXIST123". Check the ticker symbol or data availability.

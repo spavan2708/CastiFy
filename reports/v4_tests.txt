@@ -1,0 +1,18 @@
+test_column_formats (test_pipeline.PipelineTests.test_column_formats) ... ok
+test_dataset_and_purge_with_missing_trading_row (test_pipeline.PipelineTests.test_dataset_and_purge_with_missing_trading_row) ... ok
+test_date_validation (test_pipeline.PipelineTests.test_date_validation) ... ok
+test_download_contract (test_pipeline.PipelineTests.test_download_contract) ... ok
+test_feature_semantics_and_nonmutation (test_pipeline.PipelineTests.test_feature_semantics_and_nonmutation) ... ok
+test_fit_receives_only_purged_training (test_pipeline.PipelineTests.test_fit_receives_only_purged_training) ... ok
+test_future_changes_do_not_change_past_features (test_pipeline.PipelineTests.test_future_changes_do_not_change_past_features) ... ok
+test_minimum_history (test_pipeline.PipelineTests.test_minimum_history) ... ok
+test_missing_and_duplicate_columns (test_pipeline.PipelineTests.test_missing_and_duplicate_columns) ... ok
+test_normalization (test_pipeline.PipelineTests.test_normalization) ... ok
+test_unavailable_download (test_pipeline.PipelineTests.test_unavailable_download) ... ok
+test_value_validation (test_pipeline.PipelineTests.test_value_validation) ... ok
+test_zero_volume_infinity_is_rejected (test_pipeline.PipelineTests.test_zero_volume_infinity_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.104s
+
+OK

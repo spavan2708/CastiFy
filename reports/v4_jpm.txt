@@ -1,0 +1,58 @@
+============================================
+                 CASTIFY
+      Quantitative Forecasting Engine
+============================================
+Enter stock ticker: Analyzing JPM...
+
+CASTIFY DATA REPORT
+Ticker: JPM
+Requested start: 2010-01-01; requested end: None
+Effective exclusive end: 2026-09-29
+Actual dates: 2010-01-04 to 2026-09-28
+Trading observations: 4209; columns: ['Open', 'High', 'Low', 'Close', 'Volume']
+Duplicate dates: 0
+Missing values: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+Price / volume / chronological / minimum-history validation: PASS
+Overall: PASS; auto_adjust=True (adjusted OHLC; provider volume).
+
+ML observations: 4159; features: 10
+ML dates: 2010-03-16 to 2026-09-25
+Training before purge: 3327
+Removed dates: ['2023-06-01']
+Removed labels realize on or after the first test feature date.
+Training: 3326 rows; 2010-03-16 to 2023-05-31
+Testing: 832 rows; 2023-06-02 to 2026-09-25
+Latest training target: 2023-06-01
+mae: 0.01111377 (1.1114%)
+rmse: 0.01526024 (1.5260%)
+zero_mae: 0.00993859 (0.9939%)
+zero_rmse: 0.01423232 (1.4232%)
+R²: -0.158444
+Direction: 45.9135%; momentum baseline: 50.8413%; reference: 50%
+RF minus zero MAE: +0.00117518
+RF minus zero RMSE: +0.00102792
+            Actual_Return  Predicted_Return  Prediction_Error
+Date                                                         
+2023-06-02      -0.009824          0.000288         -0.010113
+2023-06-05       0.001797          0.000067          0.001730
+2023-06-06       0.009689          0.000015          0.009674
+2023-06-07       0.000284         -0.000734          0.001018
+2023-06-08       0.001990          0.000781          0.001209
+2023-06-09      -0.000071         -0.000319          0.000248
+2023-06-12       0.007234         -0.000257          0.007491
+2023-06-13      -0.003732         -0.002731         -0.001001
+2023-06-14       0.011308         -0.001659          0.012967
+2023-06-15       0.001188         -0.001808          0.002996
+Feature importance (not causation):
+      Feature  Importance
+ Return_Lag_3    0.136464
+ Return_Lag_1    0.132752
+ Return_Lag_5    0.118574
+ Return_Lag_2    0.108589
+Volatility_20    0.106484
+ Volatility_5    0.106200
+Volume_Change    0.098199
+         MA_5    0.071045
+        MA_50    0.063142
+        MA_20    0.058549
+All dataset, target-boundary, and prediction assertions: PASS

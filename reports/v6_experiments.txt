@@ -1,0 +1,1545 @@
+V6 temporal ablation for AAPL...
+{
+  "raw_rows": 4209,
+  "raw_start": "2010-01-04",
+  "raw_end": "2026-09-28",
+  "eligible_rows": 3957,
+  "eligible_start": "2010-12-31",
+  "eligible_end": "2026-09-25",
+  "advanced_count": 70,
+  "temporal_count": 18,
+  "combined_count": 88,
+  "train_before": 3165,
+  "train_rows": 3164,
+  "test_rows": 792,
+  "train_start": "2010-12-31",
+  "train_end": "2023-07-28",
+  "test_start": "2023-08-01",
+  "test_end": "2026-09-25",
+  "purged_dates": [
+    "2023-07-31"
+  ],
+  "latest_train_target": "2023-07-31",
+  "identical_dates": "PASS",
+  "advanced_unchanged": "PASS",
+  "all_matrices_finite": "PASS",
+  "advanced": {
+    "mae": 0.011851510239269015,
+    "rmse": 0.0174815516909603,
+    "r2": -0.07997034309225537,
+    "zero_mae": 0.01148607562844439,
+    "zero_rmse": 0.016843410570446072,
+    "direction": 0.5328282828282829,
+    "momentum": 0.5113636363636364
+  },
+  "advanced_temporal": {
+    "mae": 0.011820545191526925,
+    "rmse": 0.017444466753921802,
+    "r2": -0.0753931577636815,
+    "zero_mae": 0.01148607562844439,
+    "zero_rmse": 0.016843410570446072,
+    "direction": 0.5265151515151515,
+    "momentum": 0.5113636363636364
+  },
+  "deltas": {
+    "mae": -3.096504774209065e-05,
+    "rmse": -3.7084937038498605e-05,
+    "r2": 0.004577185328573874,
+    "direction": -0.0063131313131313815
+  },
+  "temporal_importance_total": 0.09287279429410622,
+  "temporal_importances": [
+    {
+      "Feature": "DayOfMonth_Sin",
+      "Importance": 0.012976580289780056
+    },
+    {
+      "Feature": "DayOfYear_Cos",
+      "Importance": 0.012677609115473755
+    },
+    {
+      "Feature": "DayOfYear_Sin",
+      "Importance": 0.011519935238944344
+    },
+    {
+      "Feature": "DayOfMonth_Cos",
+      "Importance": 0.01098737214519492
+    },
+    {
+      "Feature": "Calendar_Days_To_Month_End",
+      "Importance": 0.006661477808323599
+    },
+    {
+      "Feature": "Calendar_Days_From_Quarter_Start",
+      "Importance": 0.0066182538612157265
+    },
+    {
+      "Feature": "Calendar_Days_To_Quarter_End",
+      "Importance": 0.0065083068726977744
+    },
+    {
+      "Feature": "Calendar_Days_From_Month_Start",
+      "Importance": 0.0062490730878527875
+    },
+    {
+      "Feature": "DOW_Friday",
+      "Importance": 0.003346985967675173
+    },
+    {
+      "Feature": "Month_Cos",
+      "Importance": 0.0030223559838015246
+    },
+    {
+      "Feature": "Month_Sin",
+      "Importance": 0.002736660683840834
+    },
+    {
+      "Feature": "DOW_Tuesday",
+      "Importance": 0.0024884595899567984
+    },
+    {
+      "Feature": "DOW_Thursday",
+      "Importance": 0.0019139683857914839
+    },
+    {
+      "Feature": "Calendar_Days_Since_Previous_Session",
+      "Importance": 0.0018258355498598307
+    },
+    {
+      "Feature": "DOW_Wednesday",
+      "Importance": 0.0016270203774822268
+    },
+    {
+      "Feature": "DOW_Monday",
+      "Importance": 0.0012049565592752943
+    },
+    {
+      "Feature": "Is_Quarter_Start_Region",
+      "Importance": 0.000350134721408525
+    },
+    {
+      "Feature": "Is_Quarter_End_Region",
+      "Importance": 0.00015780805553157213
+    }
+  ],
+  "top20": [
+    {
+      "Feature": "High_Low_Range",
+      "Importance": 0.027449494255700823
+    },
+    {
+      "Feature": "Return_Lag_5",
+      "Importance": 0.02335375702266753
+    },
+    {
+      "Feature": "Relative_Volume_20",
+      "Importance": 0.021408591421062415
+    },
+    {
+      "Feature": "Overnight_Gap",
+      "Importance": 0.020589713878366056
+    },
+    {
+      "Feature": "Return_x_VolumeChange",
+      "Importance": 0.019554692943831144
+    },
+    {
+      "Feature": "Return_Lag_2",
+      "Importance": 0.019305157014692143
+    },
+    {
+      "Feature": "Price_to_SMA_10",
+      "Importance": 0.01914618995387254
+    },
+    {
+      "Feature": "Return_Lag_3",
+      "Importance": 0.018640853109580434
+    },
+    {
+      "Feature": "SMA_50_to_200",
+      "Importance": 0.01826805156906847
+    },
+    {
+      "Feature": "Momentum_x_RelativeVolume",
+      "Importance": 0.018200369303870294
+    },
+    {
+      "Feature": "Return_Lag_1",
+      "Importance": 0.018176713493940042
+    },
+    {
+      "Feature": "Return_1D",
+      "Importance": 0.017932583178454704
+    },
+    {
+      "Feature": "Relative_Volume_5",
+      "Importance": 0.017800749794423615
+    },
+    {
+      "Feature": "Rolling_Skew_60",
+      "Importance": 0.01779295890506525
+    },
+    {
+      "Feature": "Volume_Change",
+      "Importance": 0.01754775109037793
+    },
+    {
+      "Feature": "Volatility_10",
+      "Importance": 0.017440467087455436
+    },
+    {
+      "Feature": "Upside_Volatility_20",
+      "Importance": 0.015991468549809887
+    },
+    {
+      "Feature": "Volatility_Ratio_20_60",
+      "Importance": 0.015934010642754418
+    },
+    {
+      "Feature": "OBV_Flow_20",
+      "Importance": 0.015916034715211705
+    },
+    {
+      "Feature": "ATR_14_Pct",
+      "Importance": 0.015812909258761356
+    }
+  ],
+  "weekday_profile": [
+    {
+      "weekday": "Monday",
+      "count": 787,
+      "mean": 0.0029996358906813994,
+      "median": 0.003462450613329171,
+      "std": 0.01849575545699783,
+      "positive_fraction": 0.5921219822109276
+    },
+    {
+      "weekday": "Tuesday",
+      "count": 866,
+      "mean": 0.0016444014497679824,
+      "median": 0.001564422675159105,
+      "std": 0.016503708279239887,
+      "positive_fraction": 0.5438799076212472
+    },
+    {
+      "weekday": "Wednesday",
+      "count": 863,
+      "mean": 0.0017875586450537726,
+      "median": 0.0011399755955765478,
+      "std": 0.018078748931479666,
+      "positive_fraction": 0.5399768250289687
+    },
+    {
+      "weekday": "Thursday",
+      "count": 848,
+      "mean": -0.0005403055054110746,
+      "median": -0.00034094377006360643,
+      "std": 0.01767792308011792,
+      "positive_fraction": 0.4893867924528302
+    },
+    {
+      "weekday": "Friday",
+      "count": 844,
+      "mean": -0.000284995428132285,
+      "median": -0.00027783879572956804,
+      "std": 0.017567086650901106,
+      "positive_fraction": 0.49170616113744076
+    }
+  ],
+  "month_profile": [
+    {
+      "month": 1,
+      "count": 342,
+      "mean": -0.00021781677809559866,
+      "median": 0.00017101591738444277,
+      "std": 0.020816178774693467,
+      "positive_fraction": 0.5087719298245614
+    },
+    {
+      "month": 2,
+      "count": 326,
+      "mean": 0.001427939404198918,
+      "median": 0.001706897753367631,
+      "std": 0.015809914933524308,
+      "positive_fraction": 0.5552147239263804
+    },
+    {
+      "month": 3,
+      "count": 372,
+      "mean": 0.0011470609489033024,
+      "median": 0.0011555540724366153,
+      "std": 0.021437207209447053,
+      "positive_fraction": 0.532258064516129
+    },
+    {
+      "month": 4,
+      "count": 352,
+      "mean": 0.0008876457548248778,
+      "median": 0.0001996520089240228,
+      "std": 0.021345982034241213,
+      "positive_fraction": 0.5085227272727273
+    },
+    {
+      "month": 5,
+      "count": 359,
+      "mean": 0.001441635739398554,
+      "median": 0.0003903805685607775,
+      "std": 0.017176141094734157,
+      "positive_fraction": 0.5153203342618384
+    },
+    {
+      "month": 6,
+      "count": 359,
+      "mean": 0.0003995177782448087,
+      "median": 0.0003984658571016819,
+      "std": 0.015103024987210152,
+      "positive_fraction": 0.5097493036211699
+    },
+    {
+      "month": 7,
+      "count": 360,
+      "mean": 0.0031660112587396927,
+      "median": 0.0028616594087700342,
+      "std": 0.015302913374980744,
+      "positive_fraction": 0.5805555555555556
+    },
+    {
+      "month": 8,
+      "count": 376,
+      "mean": 0.002084481600713609,
+      "median": 0.0020398742418674676,
+      "std": 0.01682189090927728,
+      "positive_fraction": 0.5691489361702128
+    },
+    {
+      "month": 9,
+      "count": 346,
+      "mean": -5.328379764986426e-05,
+      "median": 0.0008882206904946566,
+      "std": 0.017923097661925277,
+      "positive_fraction": 0.5317919075144508
+    },
+    {
+      "month": 10,
+      "count": 352,
+      "mean": 0.0016822250694395412,
+      "median": 0.0020371565520533874,
+      "std": 0.016722619707181956,
+      "positive_fraction": 0.5568181818181818
+    },
+    {
+      "month": 11,
+      "count": 327,
+      "mean": 0.0012005247967365844,
+      "median": 0.00042780915333495706,
+      "std": 0.01678581409484875,
+      "positive_fraction": 0.5168195718654435
+    },
+    {
+      "month": 12,
+      "count": 337,
+      "mean": -0.0001550200919090212,
+      "median": -0.0005288122913482685,
+      "std": 0.01512587587134305,
+      "positive_fraction": 0.47774480712166173
+    }
+  ],
+  "training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9994545817839794
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9984237370840475
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9942998184372162
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9813320570995788
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.982863668768586
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9828335001986154
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.990353228266227
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.9960272384776994
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.9964829950732544
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "full_sample_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9994221774214374
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9983926851192353
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9948119932373128
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9809726140682673
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.9826207011845727
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9827990417155981
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.9903441844749619
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.9961732572836646
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.9966800048743983
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9958562890335788
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.999573554686146
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "temporal_training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "causality_checks": [
+    {
+      "cutoff": "2015-06-15",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-06-30",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-12-31",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    }
+  ],
+  "temporal_scale_invariance": "PASS",
+  "combined_scale_invariance": "PASS",
+  "effective_end_exclusive": "2026-09-29",
+  "requested_start": "2010-01-01"
+}
+V6 temporal ablation for MSFT...
+{
+  "raw_rows": 4209,
+  "raw_start": "2010-01-04",
+  "raw_end": "2026-09-28",
+  "eligible_rows": 3957,
+  "eligible_start": "2010-12-31",
+  "eligible_end": "2026-09-25",
+  "advanced_count": 70,
+  "temporal_count": 18,
+  "combined_count": 88,
+  "train_before": 3165,
+  "train_rows": 3164,
+  "test_rows": 792,
+  "train_start": "2010-12-31",
+  "train_end": "2023-07-28",
+  "test_start": "2023-08-01",
+  "test_end": "2026-09-25",
+  "purged_dates": [
+    "2023-07-31"
+  ],
+  "latest_train_target": "2023-07-31",
+  "identical_dates": "PASS",
+  "advanced_unchanged": "PASS",
+  "all_matrices_finite": "PASS",
+  "advanced": {
+    "mae": 0.011949107641198402,
+    "rmse": 0.01736056610573539,
+    "r2": -0.12878906741628482,
+    "zero_mae": 0.011170596738850425,
+    "zero_rmse": 0.01635467986681156,
+    "direction": 0.5050505050505051,
+    "momentum": 0.4936868686868687
+  },
+  "advanced_temporal": {
+    "mae": 0.011887446740065703,
+    "rmse": 0.017298164353555388,
+    "r2": -0.12068889125773707,
+    "zero_mae": 0.011170596738850425,
+    "zero_rmse": 0.01635467986681156,
+    "direction": 0.49873737373737376,
+    "momentum": 0.4936868686868687
+  },
+  "deltas": {
+    "mae": -6.166090113269955e-05,
+    "rmse": -6.240175218000243e-05,
+    "r2": 0.008100176158547745,
+    "direction": -0.006313131313131326
+  },
+  "temporal_importance_total": 0.0905116345474768,
+  "temporal_importances": [
+    {
+      "Feature": "DayOfMonth_Sin",
+      "Importance": 0.014019409864555578
+    },
+    {
+      "Feature": "DayOfYear_Sin",
+      "Importance": 0.012275416523958206
+    },
+    {
+      "Feature": "DayOfYear_Cos",
+      "Importance": 0.011319294944564047
+    },
+    {
+      "Feature": "DayOfMonth_Cos",
+      "Importance": 0.01029336952245917
+    },
+    {
+      "Feature": "Calendar_Days_To_Quarter_End",
+      "Importance": 0.007581690335643575
+    },
+    {
+      "Feature": "Calendar_Days_From_Quarter_Start",
+      "Importance": 0.007220154128980606
+    },
+    {
+      "Feature": "Calendar_Days_From_Month_Start",
+      "Importance": 0.0062165845199391835
+    },
+    {
+      "Feature": "Calendar_Days_To_Month_End",
+      "Importance": 0.0061065768141614265
+    },
+    {
+      "Feature": "Month_Sin",
+      "Importance": 0.00335277149447304
+    },
+    {
+      "Feature": "Month_Cos",
+      "Importance": 0.00316707596353012
+    },
+    {
+      "Feature": "DOW_Thursday",
+      "Importance": 0.002133844899089655
+    },
+    {
+      "Feature": "DOW_Tuesday",
+      "Importance": 0.0014851897670712425
+    },
+    {
+      "Feature": "Calendar_Days_Since_Previous_Session",
+      "Importance": 0.0014756936805174097
+    },
+    {
+      "Feature": "DOW_Wednesday",
+      "Importance": 0.001319165200157524
+    },
+    {
+      "Feature": "DOW_Friday",
+      "Importance": 0.0012418905638247877
+    },
+    {
+      "Feature": "DOW_Monday",
+      "Importance": 0.0009029073344087009
+    },
+    {
+      "Feature": "Is_Quarter_End_Region",
+      "Importance": 0.00022165321082762485
+    },
+    {
+      "Feature": "Is_Quarter_Start_Region",
+      "Importance": 0.00017894577931490093
+    }
+  ],
+  "top20": [
+    {
+      "Feature": "High_Low_Range",
+      "Importance": 0.02409007753102369
+    },
+    {
+      "Feature": "Return_Lag_1",
+      "Importance": 0.023437616212049286
+    },
+    {
+      "Feature": "SMA_50_to_200",
+      "Importance": 0.021788276739882408
+    },
+    {
+      "Feature": "Price_to_SMA_20",
+      "Importance": 0.021329983614199806
+    },
+    {
+      "Feature": "MACD_Histogram_Pct",
+      "Importance": 0.0212497792424644
+    },
+    {
+      "Feature": "Return_Lag_5",
+      "Importance": 0.0201160005710883
+    },
+    {
+      "Feature": "Return_1D",
+      "Importance": 0.019568237198894316
+    },
+    {
+      "Feature": "Return_Lag_2",
+      "Importance": 0.01925579623949537
+    },
+    {
+      "Feature": "Return_Lag_3",
+      "Importance": 0.019144725756493928
+    },
+    {
+      "Feature": "Return_x_VolumeChange",
+      "Importance": 0.018720273418802166
+    },
+    {
+      "Feature": "Overnight_Gap",
+      "Importance": 0.01840739263283425
+    },
+    {
+      "Feature": "Return_5D_Acceleration",
+      "Importance": 0.017987729846001294
+    },
+    {
+      "Feature": "Relative_Volume_20",
+      "Importance": 0.017915409475041968
+    },
+    {
+      "Feature": "Volume_Change",
+      "Importance": 0.017556408649859443
+    },
+    {
+      "Feature": "Price_to_SMA_10",
+      "Importance": 0.01685730794358015
+    },
+    {
+      "Feature": "Log_Price_Slope_20",
+      "Importance": 0.016796147598789713
+    },
+    {
+      "Feature": "Intraday_Return",
+      "Importance": 0.016618391510169212
+    },
+    {
+      "Feature": "Relative_Volume_5",
+      "Importance": 0.016395103076041
+    },
+    {
+      "Feature": "OBV_Flow_20",
+      "Importance": 0.01628938117900283
+    },
+    {
+      "Feature": "ATR_14_Pct",
+      "Importance": 0.01579842235642315
+    }
+  ],
+  "weekday_profile": [
+    {
+      "weekday": "Monday",
+      "count": 787,
+      "mean": 0.0007211689651535679,
+      "median": 0.0008267579347616127,
+      "std": 0.016092252322667453,
+      "positive_fraction": 0.5273189326556544
+    },
+    {
+      "weekday": "Tuesday",
+      "count": 866,
+      "mean": 0.0006068613626885869,
+      "median": 0.00031607606732664273,
+      "std": 0.014886799237359959,
+      "positive_fraction": 0.5092378752886836
+    },
+    {
+      "weekday": "Wednesday",
+      "count": 863,
+      "mean": 0.0012057929435321882,
+      "median": 0.0004553899382946369,
+      "std": 0.016241733065249217,
+      "positive_fraction": 0.5133256083429896
+    },
+    {
+      "weekday": "Thursday",
+      "count": 848,
+      "mean": 0.0008221488540227407,
+      "median": 0.001190804062681572,
+      "std": 0.017368562328608086,
+      "positive_fraction": 0.5389150943396226
+    },
+    {
+      "weekday": "Friday",
+      "count": 844,
+      "mean": 0.0009887257854583199,
+      "median": 0.000752605112743554,
+      "std": 0.017433306536535173,
+      "positive_fraction": 0.5272511848341233
+    }
+  ],
+  "month_profile": [
+    {
+      "month": 1,
+      "count": 342,
+      "mean": 0.00042389719398596755,
+      "median": 0.0009925654446346632,
+      "std": 0.01793578603030186,
+      "positive_fraction": 0.5263157894736842
+    },
+    {
+      "month": 2,
+      "count": 326,
+      "mean": 0.00018600155524439995,
+      "median": -6.788235246024676e-05,
+      "std": 0.0154671125935077,
+      "positive_fraction": 0.49079754601226994
+    },
+    {
+      "month": 3,
+      "count": 372,
+      "mean": 0.0008039674474854747,
+      "median": 0.0005639676236988134,
+      "std": 0.021450910625012615,
+      "positive_fraction": 0.521505376344086
+    },
+    {
+      "month": 4,
+      "count": 352,
+      "mean": 0.002030837029110304,
+      "median": 0.0008784222983394541,
+      "std": 0.01883209285030451,
+      "positive_fraction": 0.5255681818181818
+    },
+    {
+      "month": 5,
+      "count": 359,
+      "mean": 0.000831452592638528,
+      "median": 0.0,
+      "std": 0.014312040312604326,
+      "positive_fraction": 0.4986072423398329
+    },
+    {
+      "month": 6,
+      "count": 359,
+      "mean": 0.00033579091107081816,
+      "median": 0.0012931709583141604,
+      "std": 0.015412304706524197,
+      "positive_fraction": 0.5236768802228412
+    },
+    {
+      "month": 7,
+      "count": 360,
+      "mean": 0.002207009051825248,
+      "median": 0.0015895915069320532,
+      "std": 0.01715022987070619,
+      "positive_fraction": 0.5666666666666667
+    },
+    {
+      "month": 8,
+      "count": 376,
+      "mean": 0.0006926045988387203,
+      "median": 0.0006681015298426463,
+      "std": 0.014571694727243562,
+      "positive_fraction": 0.523936170212766
+    },
+    {
+      "month": 9,
+      "count": 346,
+      "mean": -0.0005777606424380585,
+      "median": 0.0,
+      "std": 0.014134366517094045,
+      "positive_fraction": 0.4913294797687861
+    },
+    {
+      "month": 10,
+      "count": 352,
+      "mean": 0.0018658908919728192,
+      "median": 0.0012698732226079645,
+      "std": 0.017435702758323075,
+      "positive_fraction": 0.5625
+    },
+    {
+      "month": 11,
+      "count": 327,
+      "mean": 0.0013158484763395777,
+      "median": 0.0011111518260389364,
+      "std": 0.014631436018103697,
+      "positive_fraction": 0.5474006116207951
+    },
+    {
+      "month": 12,
+      "count": 337,
+      "mean": 0.00025125897893249423,
+      "median": 0.0,
+      "std": 0.013381466464167185,
+      "positive_fraction": 0.49554896142433236
+    }
+  ],
+  "training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9992355139567326
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9981047996285579
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9947198530678729
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9805463993384943
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.9822471461830243
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9825496786235552
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.9882216376463585
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.9940434173912204
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.980985662526055
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "full_sample_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9992925061963259
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9983249560263513
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9952184790566841
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9808019439337273
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.9822572032753045
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9826702806379154
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.9877337084264958
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.992506236743319
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.9848886836014464
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9958562890335788
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.999573554686146
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "temporal_training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "causality_checks": [
+    {
+      "cutoff": "2015-06-15",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-06-30",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-12-31",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    }
+  ],
+  "temporal_scale_invariance": "PASS",
+  "combined_scale_invariance": "PASS",
+  "effective_end_exclusive": "2026-09-29",
+  "requested_start": "2010-01-01"
+}
+V6 temporal ablation for JPM...
+{
+  "raw_rows": 4209,
+  "raw_start": "2010-01-04",
+  "raw_end": "2026-09-28",
+  "eligible_rows": 3957,
+  "eligible_start": "2010-12-31",
+  "eligible_end": "2026-09-25",
+  "advanced_count": 70,
+  "temporal_count": 18,
+  "combined_count": 88,
+  "train_before": 3165,
+  "train_rows": 3164,
+  "test_rows": 792,
+  "train_start": "2010-12-31",
+  "train_end": "2023-07-28",
+  "test_start": "2023-08-01",
+  "test_end": "2026-09-25",
+  "purged_dates": [
+    "2023-07-31"
+  ],
+  "latest_train_target": "2023-07-31",
+  "identical_dates": "PASS",
+  "advanced_unchanged": "PASS",
+  "all_matrices_finite": "PASS",
+  "advanced": {
+    "mae": 0.01058725319088527,
+    "rmse": 0.014941382967461803,
+    "r2": -0.08417901430986685,
+    "zero_mae": 0.010042961053854254,
+    "zero_rmse": 0.014395485910296322,
+    "direction": 0.5252525252525253,
+    "momentum": 0.5075757575757576
+  },
+  "advanced_temporal": {
+    "mae": 0.010530716203673065,
+    "rmse": 0.014910344358414249,
+    "r2": -0.07967923599403481,
+    "zero_mae": 0.010042961053854254,
+    "zero_rmse": 0.014395485910296322,
+    "direction": 0.51010101010101,
+    "momentum": 0.5075757575757576
+  },
+  "deltas": {
+    "mae": -5.653698721220547e-05,
+    "rmse": -3.10386090475543e-05,
+    "r2": 0.004499778315832037,
+    "direction": -0.015151515151515249
+  },
+  "temporal_importance_total": 0.08159848259859966,
+  "temporal_importances": [
+    {
+      "Feature": "DayOfYear_Cos",
+      "Importance": 0.011708788323049515
+    },
+    {
+      "Feature": "DayOfMonth_Sin",
+      "Importance": 0.01164406476304248
+    },
+    {
+      "Feature": "DayOfYear_Sin",
+      "Importance": 0.011142214677713116
+    },
+    {
+      "Feature": "DayOfMonth_Cos",
+      "Importance": 0.010237175679671084
+    },
+    {
+      "Feature": "Calendar_Days_From_Quarter_Start",
+      "Importance": 0.006165719743755788
+    },
+    {
+      "Feature": "Calendar_Days_To_Month_End",
+      "Importance": 0.005854182680649696
+    },
+    {
+      "Feature": "Calendar_Days_To_Quarter_End",
+      "Importance": 0.005636244963343009
+    },
+    {
+      "Feature": "Calendar_Days_From_Month_Start",
+      "Importance": 0.005621647033659086
+    },
+    {
+      "Feature": "Month_Sin",
+      "Importance": 0.0023105122529157376
+    },
+    {
+      "Feature": "Month_Cos",
+      "Importance": 0.002296053890099752
+    },
+    {
+      "Feature": "DOW_Friday",
+      "Importance": 0.001753699125797487
+    },
+    {
+      "Feature": "Calendar_Days_Since_Previous_Session",
+      "Importance": 0.0015818811564423639
+    },
+    {
+      "Feature": "DOW_Thursday",
+      "Importance": 0.0014862822096045182
+    },
+    {
+      "Feature": "DOW_Tuesday",
+      "Importance": 0.0014479479978196474
+    },
+    {
+      "Feature": "DOW_Wednesday",
+      "Importance": 0.0012128239688152746
+    },
+    {
+      "Feature": "DOW_Monday",
+      "Importance": 0.0011798077905177033
+    },
+    {
+      "Feature": "Is_Quarter_End_Region",
+      "Importance": 0.00020201371519125037
+    },
+    {
+      "Feature": "Is_Quarter_Start_Region",
+      "Importance": 0.00011742262651215342
+    }
+  ],
+  "top20": [
+    {
+      "Feature": "Return_Lag_1",
+      "Importance": 0.0300348337214755
+    },
+    {
+      "Feature": "Return_Lag_3",
+      "Importance": 0.02856828537221454
+    },
+    {
+      "Feature": "Drawdown_From_252D_Peak",
+      "Importance": 0.027221951107461725
+    },
+    {
+      "Feature": "Overnight_Gap",
+      "Importance": 0.025658250481866693
+    },
+    {
+      "Feature": "Return_Lag_5",
+      "Importance": 0.02497268112435947
+    },
+    {
+      "Feature": "Price_to_SMA_200",
+      "Importance": 0.02187236109027488
+    },
+    {
+      "Feature": "SMA_5_to_20",
+      "Importance": 0.019605432089064883
+    },
+    {
+      "Feature": "Return_Lag_2",
+      "Importance": 0.01922024835698545
+    },
+    {
+      "Feature": "Rolling_Kurtosis_60",
+      "Importance": 0.0190555712769828
+    },
+    {
+      "Feature": "Return_5D_Acceleration",
+      "Importance": 0.01871146857330297
+    },
+    {
+      "Feature": "SMA_50_to_200",
+      "Importance": 0.018431153128617504
+    },
+    {
+      "Feature": "Volatility_10",
+      "Importance": 0.017546314696810544
+    },
+    {
+      "Feature": "MACD_Histogram_Pct",
+      "Importance": 0.0172555494704221
+    },
+    {
+      "Feature": "Return_1D",
+      "Importance": 0.01661103605020319
+    },
+    {
+      "Feature": "Volume_Change",
+      "Importance": 0.016045093310982386
+    },
+    {
+      "Feature": "Return_x_VolumeChange",
+      "Importance": 0.015955256310758698
+    },
+    {
+      "Feature": "High_Low_Range",
+      "Importance": 0.015706847186960058
+    },
+    {
+      "Feature": "Intraday_Return",
+      "Importance": 0.015284929170254792
+    },
+    {
+      "Feature": "Price_to_SMA_5",
+      "Importance": 0.014976169295521901
+    },
+    {
+      "Feature": "Log_Price_Slope_60",
+      "Importance": 0.014964946445332934
+    }
+  ],
+  "weekday_profile": [
+    {
+      "weekday": "Monday",
+      "count": 787,
+      "mean": 0.00044707003114419994,
+      "median": 0.0004697410771623556,
+      "std": 0.01784202104580332,
+      "positive_fraction": 0.5133418043202033
+    },
+    {
+      "weekday": "Tuesday",
+      "count": 866,
+      "mean": 0.0010754794786486002,
+      "median": 0.0009440672110498927,
+      "std": 0.0165167174737694,
+      "positive_fraction": 0.5277136258660509
+    },
+    {
+      "weekday": "Wednesday",
+      "count": 863,
+      "mean": 0.0012535692203496744,
+      "median": 0.0014388128502549336,
+      "std": 0.016686020102924096,
+      "positive_fraction": 0.5457705677867902
+    },
+    {
+      "weekday": "Thursday",
+      "count": 848,
+      "mean": 0.00048002608010406974,
+      "median": 0.0005718513982444495,
+      "std": 0.016944409348075305,
+      "positive_fraction": 0.5200471698113207
+    },
+    {
+      "weekday": "Friday",
+      "count": 844,
+      "mean": 0.00039770335887005234,
+      "median": 0.0,
+      "std": 0.018321256441626185,
+      "positive_fraction": 0.49881516587677727
+    }
+  ],
+  "month_profile": [
+    {
+      "month": 1,
+      "count": 342,
+      "mean": 0.00035450662651199987,
+      "median": 0.001067314381539508,
+      "std": 0.015390737272704867,
+      "positive_fraction": 0.543859649122807
+    },
+    {
+      "month": 2,
+      "count": 326,
+      "mean": 0.0013082489085695596,
+      "median": 0.0017440583952905708,
+      "std": 0.01588130831612502,
+      "positive_fraction": 0.5613496932515337
+    },
+    {
+      "month": 3,
+      "count": 372,
+      "mean": -0.00024451028270441665,
+      "median": -0.00010235339132391719,
+      "std": 0.024626634034696775,
+      "positive_fraction": 0.49731182795698925
+    },
+    {
+      "month": 4,
+      "count": 352,
+      "mean": 0.0006628159456907088,
+      "median": 0.0007195022670100082,
+      "std": 0.0191608735380508,
+      "positive_fraction": 0.5170454545454546
+    },
+    {
+      "month": 5,
+      "count": 359,
+      "mean": -0.00021416183293119592,
+      "median": -0.0007875502197095541,
+      "std": 0.01687263052082256,
+      "positive_fraction": 0.4623955431754875
+    },
+    {
+      "month": 6,
+      "count": 359,
+      "mean": 0.00030606290155917894,
+      "median": 0.0006625383871139423,
+      "std": 0.016510051938808463,
+      "positive_fraction": 0.520891364902507
+    },
+    {
+      "month": 7,
+      "count": 360,
+      "mean": 0.0020082456175974225,
+      "median": 0.0016878202367884843,
+      "std": 0.013898262191291786,
+      "positive_fraction": 0.5583333333333333
+    },
+    {
+      "month": 8,
+      "count": 376,
+      "mean": -0.00044144794682347805,
+      "median": 4.266644906636419e-05,
+      "std": 0.01555178774966905,
+      "positive_fraction": 0.5
+    },
+    {
+      "month": 9,
+      "count": 346,
+      "mean": -0.00044976649269849034,
+      "median": 0.00037100165082470937,
+      "std": 0.015769572798546752,
+      "positive_fraction": 0.5144508670520231
+    },
+    {
+      "month": 10,
+      "count": 352,
+      "mean": 0.0020717750918327776,
+      "median": 0.0012065031329622222,
+      "std": 0.01717568302804209,
+      "positive_fraction": 0.5227272727272727
+    },
+    {
+      "month": 11,
+      "count": 327,
+      "mean": 0.002338829811448009,
+      "median": 0.0013538634932335203,
+      "std": 0.018801759766209666,
+      "positive_fraction": 0.5382262996941896
+    },
+    {
+      "month": 12,
+      "count": 337,
+      "mean": 0.0014518103283584606,
+      "median": 0.000918749459658974,
+      "std": 0.014227498116217565,
+      "positive_fraction": 0.5281899109792285
+    }
+  ],
+  "training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9989045297201056
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9970981413303148
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9956987743992505
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9805804535016707
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.9811134674908237
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9826253959528892
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.9930990349307909
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.9973892326839535
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.987260877036599
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "full_sample_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Return_5D",
+        "feature_b": "Rolling_Mean_Return_5",
+        "correlation": 0.9990208232439086
+      },
+      {
+        "feature_a": "Return_20D",
+        "feature_b": "Rolling_Mean_Return_20",
+        "correlation": 0.9973426170601919
+      },
+      {
+        "feature_a": "Return_60D",
+        "feature_b": "Rolling_Mean_Return_60",
+        "correlation": 0.9959640571599668
+      },
+      {
+        "feature_a": "Price_to_SMA_10",
+        "feature_b": "Price_to_EMA_10",
+        "correlation": 0.9806251199154001
+      },
+      {
+        "feature_a": "Price_to_SMA_20",
+        "feature_b": "Price_to_EMA_20",
+        "correlation": 0.9811711233880279
+      },
+      {
+        "feature_a": "Price_to_SMA_50",
+        "feature_b": "Price_to_EMA_50",
+        "correlation": 0.9824058260861528
+      },
+      {
+        "feature_a": "Distance_From_20D_High",
+        "feature_b": "Drawdown_From_20D_Peak",
+        "correlation": 0.9917593064560277
+      },
+      {
+        "feature_a": "Distance_From_60D_High",
+        "feature_b": "Drawdown_From_60D_Peak",
+        "correlation": 0.9970452879100109
+      },
+      {
+        "feature_a": "Positive_Return_Ratio_20",
+        "feature_b": "Negative_Return_Ratio_20",
+        "correlation": -0.9898433145733143
+      },
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9958562890335788
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.999573554686146
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "temporal_training_audit": {
+    "exact_duplicates": [],
+    "constants": [],
+    "near_zero_variance": [],
+    "high_correlations": [
+      {
+        "feature_a": "Calendar_Days_From_Month_Start",
+        "feature_b": "Calendar_Days_To_Month_End",
+        "correlation": -0.9957795771350203
+      },
+      {
+        "feature_a": "Calendar_Days_From_Quarter_Start",
+        "feature_b": "Calendar_Days_To_Quarter_End",
+        "correlation": -0.9995688173477607
+      }
+    ],
+    "correlation_threshold": 0.98,
+    "variance_threshold": 1e-12
+  },
+  "causality_checks": [
+    {
+      "cutoff": "2015-06-15",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-06-30",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    },
+    {
+      "cutoff": "2015-12-31",
+      "prefix": "PASS",
+      "perturbation": "PASS"
+    }
+  ],
+  "temporal_scale_invariance": "PASS",
+  "combined_scale_invariance": "PASS",
+  "effective_end_exclusive": "2026-09-29",
+  "requested_start": "2010-01-01"
+}

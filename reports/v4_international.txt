@@ -1,0 +1,11 @@
+
+CASTIFY DATA REPORT
+Ticker: 7203.T
+Requested start: 2010-01-01; requested end: None
+Effective exclusive end: 2026-09-29
+Actual dates: 2010-01-04 to 2026-09-28
+Trading observations: 4112; columns: ['Open', 'High', 'Low', 'Close', 'Volume']
+Duplicate dates: 0
+Missing values: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+Price / volume / chronological / minimum-history validation: PASS
+Overall: PASS; auto_adjust=True (adjusted OHLC; provider volume).

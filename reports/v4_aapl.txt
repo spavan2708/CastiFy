@@ -1,0 +1,58 @@
+============================================
+                 CASTIFY
+      Quantitative Forecasting Engine
+============================================
+Enter stock ticker: Analyzing AAPL...
+
+CASTIFY DATA REPORT
+Ticker: AAPL
+Requested start: 2010-01-01; requested end: None
+Effective exclusive end: 2026-09-29
+Actual dates: 2010-01-04 to 2026-09-28
+Trading observations: 4209; columns: ['Open', 'High', 'Low', 'Close', 'Volume']
+Duplicate dates: 0
+Missing values: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+Price / volume / chronological / minimum-history validation: PASS
+Overall: PASS; auto_adjust=True (adjusted OHLC; provider volume).
+
+ML observations: 4159; features: 10
+ML dates: 2010-03-16 to 2026-09-25
+Training before purge: 3327
+Removed dates: ['2023-06-01']
+Removed labels realize on or after the first test feature date.
+Training: 3326 rows; 2010-03-16 to 2023-05-31
+Testing: 832 rows; 2023-06-02 to 2026-09-25
+Latest training target: 2023-06-01
+mae: 0.01279743 (1.2797%)
+rmse: 0.01777521 (1.7775%)
+zero_mae: 0.01127568 (1.1276%)
+zero_rmse: 0.01654731 (1.6547%)
+R²: -0.157389
+Direction: 46.6346%; momentum baseline: 50.9615%; reference: 50%
+RF minus zero MAE: +0.00152175
+RF minus zero RMSE: +0.00122790
+            Actual_Return  Predicted_Return  Prediction_Error
+Date                                                         
+2023-06-02      -0.007571          0.000384         -0.007955
+2023-06-05      -0.002060          0.004514         -0.006574
+2023-06-06      -0.007756         -0.000339         -0.007417
+2023-06-07       0.015465          0.002572          0.012893
+2023-06-08       0.002160          0.003884         -0.001723
+2023-06-09       0.015639          0.000926          0.014713
+2023-06-12      -0.002612          0.003705         -0.006317
+2023-06-13       0.003492         -0.001081          0.004573
+2023-06-14       0.011199          0.004286          0.006913
+2023-06-15      -0.005860          0.001372         -0.007232
+Feature importance (not causation):
+      Feature  Importance
+ Return_Lag_5    0.126106
+Volume_Change    0.125083
+ Return_Lag_1    0.121984
+Volatility_20    0.114787
+ Volatility_5    0.112976
+ Return_Lag_2    0.112308
+ Return_Lag_3    0.108609
+        MA_50    0.064393
+         MA_5    0.062259
+        MA_20    0.051495
+All dataset, target-boundary, and prediction assertions: PASS

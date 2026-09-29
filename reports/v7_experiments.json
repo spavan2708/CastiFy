@@ -1,0 +1,2324 @@
+{
+  "results": {
+    "AAPL": {
+      "profile": {
+        "ticker": "AAPL",
+        "sector": "XLK",
+        "market": "SPY",
+        "growth": "QQQ",
+        "volatility": "^VIX",
+        "rates": "^TNX",
+        "region": "US",
+        "timing": "After completed US equity close: exact-date ETF data; strictly prior-date VIX/TNX, maximum age 4 calendar days."
+      },
+      "source_reports": [
+        {
+          "symbol": "SPY",
+          "purpose": "Broad US equity market ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "QQQ",
+          "purpose": "Growth/technology-heavy US equity ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "^VIX",
+          "purpose": "Cboe implied volatility index; Yahoo points, divided by 100 for level",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4211,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4366,
+          "empty_quote_dates": [
+            "2010-01-18",
+            "2010-02-15",
+            "2010-04-02",
+            "2010-05-31",
+            "2010-07-05",
+            "2010-09-06",
+            "2010-11-25",
+            "2010-12-24",
+            "2011-01-17",
+            "2011-02-21",
+            "2011-04-22",
+            "2011-05-30",
+            "2011-07-04",
+            "2011-09-05",
+            "2011-11-24",
+            "2011-12-26",
+            "2012-01-02",
+            "2012-01-16",
+            "2012-02-20",
+            "2012-04-06",
+            "2012-05-28",
+            "2012-07-04",
+            "2012-09-03",
+            "2012-10-29",
+            "2012-10-30",
+            "2012-11-22",
+            "2012-12-25",
+            "2013-01-01",
+            "2013-01-21",
+            "2013-02-18",
+            "2013-03-29",
+            "2013-05-27",
+            "2013-07-04",
+            "2013-09-02",
+            "2013-11-28",
+            "2013-12-25",
+            "2014-01-01",
+            "2014-01-20",
+            "2014-02-17",
+            "2014-04-18",
+            "2014-05-26",
+            "2014-07-04",
+            "2014-09-01",
+            "2014-11-27",
+            "2014-12-25",
+            "2015-01-01",
+            "2015-01-19",
+            "2015-02-16",
+            "2015-04-03",
+            "2015-05-25",
+            "2015-07-03",
+            "2015-09-07",
+            "2015-11-26",
+            "2015-12-25",
+            "2016-01-01",
+            "2016-01-18",
+            "2016-02-15",
+            "2016-03-25",
+            "2016-05-30",
+            "2016-07-04",
+            "2016-09-05",
+            "2016-11-24",
+            "2016-12-26",
+            "2017-01-02",
+            "2017-01-16",
+            "2017-02-20",
+            "2017-04-14",
+            "2017-05-29",
+            "2017-07-04",
+            "2017-09-04",
+            "2017-11-23",
+            "2017-12-25",
+            "2018-01-01",
+            "2018-01-15",
+            "2018-02-19",
+            "2018-03-30",
+            "2018-05-28",
+            "2018-07-04",
+            "2018-09-03",
+            "2018-11-22",
+            "2018-12-05",
+            "2018-12-25",
+            "2019-01-01",
+            "2019-01-21",
+            "2019-02-18",
+            "2019-04-19",
+            "2019-05-27",
+            "2019-07-04",
+            "2019-09-02",
+            "2019-11-28",
+            "2019-12-25",
+            "2020-01-01",
+            "2020-01-20",
+            "2020-02-17",
+            "2020-04-10",
+            "2020-05-25",
+            "2020-07-03",
+            "2020-09-07",
+            "2020-11-26",
+            "2020-12-25",
+            "2021-01-01",
+            "2021-01-18",
+            "2021-02-15",
+            "2021-04-02",
+            "2021-05-31",
+            "2021-07-05",
+            "2021-09-06",
+            "2021-11-25",
+            "2021-12-24",
+            "2022-01-17",
+            "2022-02-21",
+            "2022-04-15",
+            "2022-05-30",
+            "2022-06-20",
+            "2022-07-04",
+            "2022-09-05",
+            "2022-11-24",
+            "2022-12-26",
+            "2023-01-02",
+            "2023-01-16",
+            "2023-02-20",
+            "2023-04-07",
+            "2023-05-29",
+            "2023-06-19",
+            "2023-07-04",
+            "2023-09-04",
+            "2023-11-23",
+            "2023-12-25",
+            "2024-01-01",
+            "2024-01-15",
+            "2024-02-19",
+            "2024-03-29",
+            "2024-05-27",
+            "2024-06-19",
+            "2024-07-04",
+            "2024-09-02",
+            "2024-11-28",
+            "2024-12-25",
+            "2025-01-01",
+            "2025-01-09",
+            "2025-01-20",
+            "2025-02-17",
+            "2025-04-18",
+            "2025-05-26",
+            "2025-06-19",
+            "2025-07-04",
+            "2025-09-01",
+            "2025-11-27",
+            "2025-12-25",
+            "2026-01-01",
+            "2026-01-19",
+            "2026-02-16",
+            "2026-04-03",
+            "2026-06-19",
+            "2026-07-03"
+          ],
+          "same_date_missing": 0,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "^TNX",
+          "purpose": "Yahoo 10-year Treasury yield proxy; percentage points, divided by 100",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4207,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [
+            "2010-10-11",
+            "2016-11-11"
+          ],
+          "same_date_missing": 2,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "XLK",
+          "purpose": "Technology sector ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        }
+      ],
+      "raw_rows": 4209,
+      "raw_start": "2010-01-04",
+      "raw_end": "2026-09-28",
+      "context_eligible_rows": 3955,
+      "common_rows": 3955,
+      "feature_count": 132,
+      "common_start": "2011-01-03",
+      "common_end": "2026-09-25",
+      "train_before": 3164,
+      "train_rows": 3163,
+      "test_rows": 791,
+      "train_start": "2011-01-03",
+      "train_end": "2023-07-31",
+      "test_start": "2023-08-02",
+      "test_end": "2026-09-25",
+      "purged_dates": [
+        "2023-08-01"
+      ],
+      "latest_training_target": "2023-08-01",
+      "temporal": {
+        "mae": 0.011877351453447838,
+        "rmse": 0.01744397300550578,
+        "r2": -0.07525736289500817,
+        "zero_mae": 0.011481015519532138,
+        "zero_rmse": 0.016845053155686438,
+        "direction": 0.515802781289507,
+        "momentum": 0.5107458912768648
+      },
+      "context": {
+        "mae": 0.011740761855858933,
+        "rmse": 0.01705046601207088,
+        "r2": -0.027292505817648305,
+        "zero_mae": 0.011481015519532138,
+        "zero_rmse": 0.016845053155686438,
+        "direction": 0.5322376738305942,
+        "momentum": 0.5107458912768648
+      },
+      "deltas": {
+        "mae": -0.0001365895975889049,
+        "rmse": -0.0003935069934349021,
+        "r2": 0.04796485707735987,
+        "direction": 0.01643489254108721
+      },
+      "context_importance_total": 0.3980440720139451,
+      "context_importances": [
+        {
+          "Feature": "Treasury_10Y_Level",
+          "Importance": 0.016291975959206416
+        },
+        {
+          "Feature": "VIX_Return_1D",
+          "Importance": 0.015769802451049378
+        },
+        {
+          "Feature": "Treasury_10Y_Change_1D",
+          "Importance": 0.014367289410669466
+        },
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.014136102758380422
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.01134232748797739
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.0110937208278184
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.011068458337360672
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.01103981230707249
+        },
+        {
+          "Feature": "QQQ_Return_20D",
+          "Importance": 0.010832771631588592
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.010688935702003554
+        },
+        {
+          "Feature": "Sector_Adjusted_Return_1D",
+          "Importance": 0.010516394360596672
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.010393822755617505
+        },
+        {
+          "Feature": "QQQ_Return_1D",
+          "Importance": 0.010130550512747097
+        },
+        {
+          "Feature": "SPY_Return_5D",
+          "Importance": 0.009970460570912328
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_50",
+          "Importance": 0.009797808236371774
+        },
+        {
+          "Feature": "SPY_Volatility_Ratio_5_20",
+          "Importance": 0.00967385107924824
+        },
+        {
+          "Feature": "Market_Adjusted_Return_1D",
+          "Importance": 0.009638731725484967
+        },
+        {
+          "Feature": "Sector_Return_5D",
+          "Importance": 0.009521081620535566
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_20",
+          "Importance": 0.009047935222056797
+        },
+        {
+          "Feature": "SPY_Return_20D",
+          "Importance": 0.008923426420826979
+        },
+        {
+          "Feature": "QQQ_Return_5D",
+          "Importance": 0.00887665443607972
+        },
+        {
+          "Feature": "Sector_Return_1D",
+          "Importance": 0.008859281918361047
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_200",
+          "Importance": 0.008827214475831036
+        },
+        {
+          "Feature": "SPY_Volatility_5",
+          "Importance": 0.008558010062937625
+        },
+        {
+          "Feature": "Stock_SPY_Beta_60",
+          "Importance": 0.00849161625403306
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_5D",
+          "Importance": 0.008454099880661191
+        },
+        {
+          "Feature": "VIX_Return_5D",
+          "Importance": 0.00841515982797915
+        },
+        {
+          "Feature": "Sector_Return_20D",
+          "Importance": 0.008015743519884256
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_50",
+          "Importance": 0.007864924846004434
+        },
+        {
+          "Feature": "VIX_Percentile_252",
+          "Importance": 0.007721446223070744
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_5D",
+          "Importance": 0.007515195817500054
+        },
+        {
+          "Feature": "Stock_SPY_Beta_20",
+          "Importance": 0.007306202023782985
+        },
+        {
+          "Feature": "Stock_vs_QQQ_Return_20D",
+          "Importance": 0.0071164362673599955
+        },
+        {
+          "Feature": "Sector_Volatility_20",
+          "Importance": 0.007067033666334634
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_20D",
+          "Importance": 0.006894701332632094
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_20",
+          "Importance": 0.006662541042782877
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_20",
+          "Importance": 0.0065137849356058765
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_60",
+          "Importance": 0.006436592494926541
+        },
+        {
+          "Feature": "Stock_to_Sector_Volatility_20",
+          "Importance": 0.0062635424997135
+        },
+        {
+          "Feature": "SPY_Volatility_60",
+          "Importance": 0.005794913555515127
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_20D",
+          "Importance": 0.0057482314210183
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_60",
+          "Importance": 0.005565553940849784
+        },
+        {
+          "Feature": "Stock_to_SPY_Volatility_20",
+          "Importance": 0.005555327470201352
+        },
+        {
+          "Feature": "SPY_Volatility_20",
+          "Importance": 0.005274604723354944
+        }
+      ],
+      "top25": [
+        {
+          "Feature": "High_Low_Range",
+          "Importance": 0.01933402074274416
+        },
+        {
+          "Feature": "Treasury_10Y_Level",
+          "Importance": 0.016291975959206416
+        },
+        {
+          "Feature": "VIX_Return_1D",
+          "Importance": 0.015769802451049378
+        },
+        {
+          "Feature": "Treasury_10Y_Change_1D",
+          "Importance": 0.014367289410669466
+        },
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.014136102758380422
+        },
+        {
+          "Feature": "Return_Lag_5",
+          "Importance": 0.013926501682205874
+        },
+        {
+          "Feature": "Relative_Volume_20",
+          "Importance": 0.01373230034493169
+        },
+        {
+          "Feature": "Overnight_Gap",
+          "Importance": 0.013220500547725778
+        },
+        {
+          "Feature": "SMA_50_to_200",
+          "Importance": 0.012903521300653384
+        },
+        {
+          "Feature": "Return_Lag_3",
+          "Importance": 0.012406326204322379
+        },
+        {
+          "Feature": "Return_x_VolumeChange",
+          "Importance": 0.012239710776703784
+        },
+        {
+          "Feature": "Return_Lag_2",
+          "Importance": 0.01217947585868307
+        },
+        {
+          "Feature": "Volume_Change",
+          "Importance": 0.012174045527134301
+        },
+        {
+          "Feature": "Relative_Volume_5",
+          "Importance": 0.011724325556103058
+        },
+        {
+          "Feature": "Return_Lag_1",
+          "Importance": 0.011544072157879141
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.01134232748797739
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.0110937208278184
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.011068458337360672
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.01103981230707249
+        },
+        {
+          "Feature": "Rolling_Skew_60",
+          "Importance": 0.010996285064543764
+        },
+        {
+          "Feature": "QQQ_Return_20D",
+          "Importance": 0.010832771631588592
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.010688935702003554
+        },
+        {
+          "Feature": "Sector_Adjusted_Return_1D",
+          "Importance": 0.010516394360596672
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.010393822755617505
+        },
+        {
+          "Feature": "MACD_Signal_Pct",
+          "Importance": 0.010372123568600958
+        }
+      ],
+      "descriptive": {
+        "paired_return_rows": 4208,
+        "stock_spy_correlation": 0.6772714623148525,
+        "stock_sector_correlation": 0.7433234006333918,
+        "vix_environments": {
+          "low_trailing_vix": {
+            "count": 1347,
+            "mean": 0.0009012337183366455
+          },
+          "high_trailing_vix": {
+            "count": 902,
+            "mean": 0.0007464289833250867
+          }
+        },
+        "note": "Reporting only; prior-date trailing VIX percentile thresholds 0.25/0.75; no causal claims."
+      },
+      "training_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9994543435897404
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.9984230262496326
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.9942998517579176
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9813163692826843
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9828497054497413
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9828247313795967
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9903478296612608
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.9960262011568278
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9964816402844685
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.9957762510413962
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995685321750807
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "full_sample_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9994219122568848
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.9983920737304046
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.9948112562785278
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9809600286166917
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9826099163666696
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9827921197598827
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9903381281988776
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.9961716359891489
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9966789232594657
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.995851069108602
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995733704808725
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "context_only_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "causality_checks": [
+        {
+          "cutoff": "2015-06-15",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-06-30",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-12-31",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        }
+      ],
+      "scale_invariance": "PASS",
+      "identical_comparison_dates": "PASS",
+      "finite_matrices": "PASS"
+    },
+    "MSFT": {
+      "profile": {
+        "ticker": "MSFT",
+        "sector": "XLK",
+        "market": "SPY",
+        "growth": "QQQ",
+        "volatility": "^VIX",
+        "rates": "^TNX",
+        "region": "US",
+        "timing": "After completed US equity close: exact-date ETF data; strictly prior-date VIX/TNX, maximum age 4 calendar days."
+      },
+      "source_reports": [
+        {
+          "symbol": "SPY",
+          "purpose": "Broad US equity market ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "QQQ",
+          "purpose": "Growth/technology-heavy US equity ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "^VIX",
+          "purpose": "Cboe implied volatility index; Yahoo points, divided by 100 for level",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4211,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4366,
+          "empty_quote_dates": [
+            "2010-01-18",
+            "2010-02-15",
+            "2010-04-02",
+            "2010-05-31",
+            "2010-07-05",
+            "2010-09-06",
+            "2010-11-25",
+            "2010-12-24",
+            "2011-01-17",
+            "2011-02-21",
+            "2011-04-22",
+            "2011-05-30",
+            "2011-07-04",
+            "2011-09-05",
+            "2011-11-24",
+            "2011-12-26",
+            "2012-01-02",
+            "2012-01-16",
+            "2012-02-20",
+            "2012-04-06",
+            "2012-05-28",
+            "2012-07-04",
+            "2012-09-03",
+            "2012-10-29",
+            "2012-10-30",
+            "2012-11-22",
+            "2012-12-25",
+            "2013-01-01",
+            "2013-01-21",
+            "2013-02-18",
+            "2013-03-29",
+            "2013-05-27",
+            "2013-07-04",
+            "2013-09-02",
+            "2013-11-28",
+            "2013-12-25",
+            "2014-01-01",
+            "2014-01-20",
+            "2014-02-17",
+            "2014-04-18",
+            "2014-05-26",
+            "2014-07-04",
+            "2014-09-01",
+            "2014-11-27",
+            "2014-12-25",
+            "2015-01-01",
+            "2015-01-19",
+            "2015-02-16",
+            "2015-04-03",
+            "2015-05-25",
+            "2015-07-03",
+            "2015-09-07",
+            "2015-11-26",
+            "2015-12-25",
+            "2016-01-01",
+            "2016-01-18",
+            "2016-02-15",
+            "2016-03-25",
+            "2016-05-30",
+            "2016-07-04",
+            "2016-09-05",
+            "2016-11-24",
+            "2016-12-26",
+            "2017-01-02",
+            "2017-01-16",
+            "2017-02-20",
+            "2017-04-14",
+            "2017-05-29",
+            "2017-07-04",
+            "2017-09-04",
+            "2017-11-23",
+            "2017-12-25",
+            "2018-01-01",
+            "2018-01-15",
+            "2018-02-19",
+            "2018-03-30",
+            "2018-05-28",
+            "2018-07-04",
+            "2018-09-03",
+            "2018-11-22",
+            "2018-12-05",
+            "2018-12-25",
+            "2019-01-01",
+            "2019-01-21",
+            "2019-02-18",
+            "2019-04-19",
+            "2019-05-27",
+            "2019-07-04",
+            "2019-09-02",
+            "2019-11-28",
+            "2019-12-25",
+            "2020-01-01",
+            "2020-01-20",
+            "2020-02-17",
+            "2020-04-10",
+            "2020-05-25",
+            "2020-07-03",
+            "2020-09-07",
+            "2020-11-26",
+            "2020-12-25",
+            "2021-01-01",
+            "2021-01-18",
+            "2021-02-15",
+            "2021-04-02",
+            "2021-05-31",
+            "2021-07-05",
+            "2021-09-06",
+            "2021-11-25",
+            "2021-12-24",
+            "2022-01-17",
+            "2022-02-21",
+            "2022-04-15",
+            "2022-05-30",
+            "2022-06-20",
+            "2022-07-04",
+            "2022-09-05",
+            "2022-11-24",
+            "2022-12-26",
+            "2023-01-02",
+            "2023-01-16",
+            "2023-02-20",
+            "2023-04-07",
+            "2023-05-29",
+            "2023-06-19",
+            "2023-07-04",
+            "2023-09-04",
+            "2023-11-23",
+            "2023-12-25",
+            "2024-01-01",
+            "2024-01-15",
+            "2024-02-19",
+            "2024-03-29",
+            "2024-05-27",
+            "2024-06-19",
+            "2024-07-04",
+            "2024-09-02",
+            "2024-11-28",
+            "2024-12-25",
+            "2025-01-01",
+            "2025-01-09",
+            "2025-01-20",
+            "2025-02-17",
+            "2025-04-18",
+            "2025-05-26",
+            "2025-06-19",
+            "2025-07-04",
+            "2025-09-01",
+            "2025-11-27",
+            "2025-12-25",
+            "2026-01-01",
+            "2026-01-19",
+            "2026-02-16",
+            "2026-04-03",
+            "2026-06-19",
+            "2026-07-03"
+          ],
+          "same_date_missing": 0,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "^TNX",
+          "purpose": "Yahoo 10-year Treasury yield proxy; percentage points, divided by 100",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4207,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [
+            "2010-10-11",
+            "2016-11-11"
+          ],
+          "same_date_missing": 2,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "XLK",
+          "purpose": "Technology sector ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        }
+      ],
+      "raw_rows": 4209,
+      "raw_start": "2010-01-04",
+      "raw_end": "2026-09-28",
+      "context_eligible_rows": 3955,
+      "common_rows": 3955,
+      "feature_count": 132,
+      "common_start": "2011-01-03",
+      "common_end": "2026-09-25",
+      "train_before": 3164,
+      "train_rows": 3163,
+      "test_rows": 791,
+      "train_start": "2011-01-03",
+      "train_end": "2023-07-31",
+      "test_start": "2023-08-02",
+      "test_end": "2026-09-25",
+      "purged_dates": [
+        "2023-08-01"
+      ],
+      "latest_training_target": "2023-08-01",
+      "temporal": {
+        "mae": 0.011953247142063961,
+        "rmse": 0.017491515554651955,
+        "r2": -0.14839066748375873,
+        "zero_mae": 0.011151494978791815,
+        "zero_rmse": 0.01633830989163916,
+        "direction": 0.5221238938053098,
+        "momentum": 0.4943109987357775
+      },
+      "context": {
+        "mae": 0.026548058543161848,
+        "rmse": 0.03274436143990428,
+        "r2": -3.02446193758849,
+        "zero_mae": 0.011151494978791815,
+        "zero_rmse": 0.01633830989163916,
+        "direction": 0.47281921618204803,
+        "momentum": 0.4943109987357775
+      },
+      "deltas": {
+        "mae": 0.014594811401097887,
+        "rmse": 0.015252845885252324,
+        "r2": -2.876071270104731,
+        "direction": -0.04930467762326174
+      },
+      "context_importance_total": 0.4315419805130416,
+      "context_importances": [
+        {
+          "Feature": "Treasury_10Y_Level",
+          "Importance": 0.01905410377739962
+        },
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.018382857257155872
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.015815479216989812
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_50",
+          "Importance": 0.015739463300948813
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.015043120485629788
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.013523439732888616
+        },
+        {
+          "Feature": "Sector_Return_1D",
+          "Importance": 0.01277528668686393
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.012732925008277338
+        },
+        {
+          "Feature": "VIX_Return_5D",
+          "Importance": 0.012574778992778712
+        },
+        {
+          "Feature": "Treasury_10Y_Change_1D",
+          "Importance": 0.011797515853713874
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.011650625093429984
+        },
+        {
+          "Feature": "QQQ_Return_1D",
+          "Importance": 0.011323015401139051
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.011191175381700034
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_200",
+          "Importance": 0.011004468004013753
+        },
+        {
+          "Feature": "SPY_Return_5D",
+          "Importance": 0.01082892199867571
+        },
+        {
+          "Feature": "SPY_Return_20D",
+          "Importance": 0.010613225354274353
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_5D",
+          "Importance": 0.01050007809927926
+        },
+        {
+          "Feature": "Sector_Adjusted_Return_1D",
+          "Importance": 0.010227088992635408
+        },
+        {
+          "Feature": "Sector_Return_5D",
+          "Importance": 0.009944912711477174
+        },
+        {
+          "Feature": "QQQ_Return_20D",
+          "Importance": 0.009245112997169035
+        },
+        {
+          "Feature": "VIX_Percentile_252",
+          "Importance": 0.009231375312329357
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_50",
+          "Importance": 0.009152869714060086
+        },
+        {
+          "Feature": "Market_Adjusted_Return_1D",
+          "Importance": 0.008911543970879465
+        },
+        {
+          "Feature": "QQQ_Return_5D",
+          "Importance": 0.008878842563980301
+        },
+        {
+          "Feature": "SPY_Volatility_5",
+          "Importance": 0.008810884169000626
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_60",
+          "Importance": 0.008715858462529171
+        },
+        {
+          "Feature": "VIX_Return_1D",
+          "Importance": 0.008671331991073146
+        },
+        {
+          "Feature": "SPY_Volatility_Ratio_5_20",
+          "Importance": 0.008584389515873233
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_20",
+          "Importance": 0.00805051140862762
+        },
+        {
+          "Feature": "Sector_Return_20D",
+          "Importance": 0.00790389529285431
+        },
+        {
+          "Feature": "Stock_SPY_Beta_60",
+          "Importance": 0.007765862055486394
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_5D",
+          "Importance": 0.007540819774179804
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_20",
+          "Importance": 0.007475923390252444
+        },
+        {
+          "Feature": "Sector_Volatility_20",
+          "Importance": 0.007376628886108226
+        },
+        {
+          "Feature": "Stock_vs_QQQ_Return_20D",
+          "Importance": 0.006855880667489093
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_60",
+          "Importance": 0.006758046449283735
+        },
+        {
+          "Feature": "Stock_to_Sector_Volatility_20",
+          "Importance": 0.0065343983895235136
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_20D",
+          "Importance": 0.00612852712226582
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_20",
+          "Importance": 0.006085763994158618
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_20D",
+          "Importance": 0.006060279962163494
+        },
+        {
+          "Feature": "Stock_SPY_Beta_20",
+          "Importance": 0.006002605661916135
+        },
+        {
+          "Feature": "Stock_to_SPY_Volatility_20",
+          "Importance": 0.005592588989812192
+        },
+        {
+          "Feature": "SPY_Volatility_20",
+          "Importance": 0.0054492075293349805
+        },
+        {
+          "Feature": "SPY_Volatility_60",
+          "Importance": 0.005036350893419718
+        }
+      ],
+      "top25": [
+        {
+          "Feature": "Treasury_10Y_Level",
+          "Importance": 0.01905410377739962
+        },
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.018382857257155872
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.015815479216989812
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_50",
+          "Importance": 0.015739463300948813
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.015043120485629788
+        },
+        {
+          "Feature": "SMA_50_to_200",
+          "Importance": 0.014220253474425404
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.013523439732888616
+        },
+        {
+          "Feature": "Return_Lag_5",
+          "Importance": 0.013124160704221422
+        },
+        {
+          "Feature": "High_Low_Range",
+          "Importance": 0.013078872654491919
+        },
+        {
+          "Feature": "Return_Lag_3",
+          "Importance": 0.012984866767165808
+        },
+        {
+          "Feature": "Return_Lag_1",
+          "Importance": 0.012866770710234975
+        },
+        {
+          "Feature": "Sector_Return_1D",
+          "Importance": 0.01277528668686393
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.012732925008277338
+        },
+        {
+          "Feature": "VIX_Return_5D",
+          "Importance": 0.012574778992778712
+        },
+        {
+          "Feature": "Price_to_SMA_20",
+          "Importance": 0.01219673921824575
+        },
+        {
+          "Feature": "Relative_Volume_20",
+          "Importance": 0.012186842591822716
+        },
+        {
+          "Feature": "Return_5D_Acceleration",
+          "Importance": 0.012130100676515461
+        },
+        {
+          "Feature": "Overnight_Gap",
+          "Importance": 0.011939065509195773
+        },
+        {
+          "Feature": "Treasury_10Y_Change_1D",
+          "Importance": 0.011797515853713874
+        },
+        {
+          "Feature": "Volume_Change",
+          "Importance": 0.011724887814324875
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.011650625093429984
+        },
+        {
+          "Feature": "Return_x_VolumeChange",
+          "Importance": 0.011377807517290723
+        },
+        {
+          "Feature": "QQQ_Return_1D",
+          "Importance": 0.011323015401139051
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.011191175381700034
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_200",
+          "Importance": 0.011004468004013753
+        }
+      ],
+      "descriptive": {
+        "paired_return_rows": 4208,
+        "stock_spy_correlation": 0.7255451183092981,
+        "stock_sector_correlation": 0.7833457548186775,
+        "vix_environments": {
+          "low_trailing_vix": {
+            "count": 1347,
+            "mean": 0.0008075055401909757
+          },
+          "high_trailing_vix": {
+            "count": 902,
+            "mean": 0.0014583283597905988
+          }
+        },
+        "note": "Reporting only; prior-date trailing VIX percentile thresholds 0.25/0.75; no causal claims."
+      },
+      "training_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9992355269334224
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.9981044813921933
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.99471787129135
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9805402299821608
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9822493852121557
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9825351793837991
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9882091253305653
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.9940358885573078
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9805232919458201
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.9957762510413962
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995685321750807
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "full_sample_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9992924263507801
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.9983246894635335
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.9952168994731313
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9808050612077127
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9822567516094587
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9826641259062299
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9877326531777731
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.9925069186422537
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9844995369343604
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.995851069108602
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995733704808725
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "context_only_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "causality_checks": [
+        {
+          "cutoff": "2015-06-15",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-06-30",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-12-31",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        }
+      ],
+      "scale_invariance": "PASS",
+      "identical_comparison_dates": "PASS",
+      "finite_matrices": "PASS"
+    },
+    "JPM": {
+      "profile": {
+        "ticker": "JPM",
+        "sector": "XLF",
+        "market": "SPY",
+        "growth": "QQQ",
+        "volatility": "^VIX",
+        "rates": "^TNX",
+        "region": "US",
+        "timing": "After completed US equity close: exact-date ETF data; strictly prior-date VIX/TNX, maximum age 4 calendar days."
+      },
+      "source_reports": [
+        {
+          "symbol": "SPY",
+          "purpose": "Broad US equity market ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "QQQ",
+          "purpose": "Growth/technology-heavy US equity ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        },
+        {
+          "symbol": "^VIX",
+          "purpose": "Cboe implied volatility index; Yahoo points, divided by 100 for level",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4211,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4366,
+          "empty_quote_dates": [
+            "2010-01-18",
+            "2010-02-15",
+            "2010-04-02",
+            "2010-05-31",
+            "2010-07-05",
+            "2010-09-06",
+            "2010-11-25",
+            "2010-12-24",
+            "2011-01-17",
+            "2011-02-21",
+            "2011-04-22",
+            "2011-05-30",
+            "2011-07-04",
+            "2011-09-05",
+            "2011-11-24",
+            "2011-12-26",
+            "2012-01-02",
+            "2012-01-16",
+            "2012-02-20",
+            "2012-04-06",
+            "2012-05-28",
+            "2012-07-04",
+            "2012-09-03",
+            "2012-10-29",
+            "2012-10-30",
+            "2012-11-22",
+            "2012-12-25",
+            "2013-01-01",
+            "2013-01-21",
+            "2013-02-18",
+            "2013-03-29",
+            "2013-05-27",
+            "2013-07-04",
+            "2013-09-02",
+            "2013-11-28",
+            "2013-12-25",
+            "2014-01-01",
+            "2014-01-20",
+            "2014-02-17",
+            "2014-04-18",
+            "2014-05-26",
+            "2014-07-04",
+            "2014-09-01",
+            "2014-11-27",
+            "2014-12-25",
+            "2015-01-01",
+            "2015-01-19",
+            "2015-02-16",
+            "2015-04-03",
+            "2015-05-25",
+            "2015-07-03",
+            "2015-09-07",
+            "2015-11-26",
+            "2015-12-25",
+            "2016-01-01",
+            "2016-01-18",
+            "2016-02-15",
+            "2016-03-25",
+            "2016-05-30",
+            "2016-07-04",
+            "2016-09-05",
+            "2016-11-24",
+            "2016-12-26",
+            "2017-01-02",
+            "2017-01-16",
+            "2017-02-20",
+            "2017-04-14",
+            "2017-05-29",
+            "2017-07-04",
+            "2017-09-04",
+            "2017-11-23",
+            "2017-12-25",
+            "2018-01-01",
+            "2018-01-15",
+            "2018-02-19",
+            "2018-03-30",
+            "2018-05-28",
+            "2018-07-04",
+            "2018-09-03",
+            "2018-11-22",
+            "2018-12-05",
+            "2018-12-25",
+            "2019-01-01",
+            "2019-01-21",
+            "2019-02-18",
+            "2019-04-19",
+            "2019-05-27",
+            "2019-07-04",
+            "2019-09-02",
+            "2019-11-28",
+            "2019-12-25",
+            "2020-01-01",
+            "2020-01-20",
+            "2020-02-17",
+            "2020-04-10",
+            "2020-05-25",
+            "2020-07-03",
+            "2020-09-07",
+            "2020-11-26",
+            "2020-12-25",
+            "2021-01-01",
+            "2021-01-18",
+            "2021-02-15",
+            "2021-04-02",
+            "2021-05-31",
+            "2021-07-05",
+            "2021-09-06",
+            "2021-11-25",
+            "2021-12-24",
+            "2022-01-17",
+            "2022-02-21",
+            "2022-04-15",
+            "2022-05-30",
+            "2022-06-20",
+            "2022-07-04",
+            "2022-09-05",
+            "2022-11-24",
+            "2022-12-26",
+            "2023-01-02",
+            "2023-01-16",
+            "2023-02-20",
+            "2023-04-07",
+            "2023-05-29",
+            "2023-06-19",
+            "2023-07-04",
+            "2023-09-04",
+            "2023-11-23",
+            "2023-12-25",
+            "2024-01-01",
+            "2024-01-15",
+            "2024-02-19",
+            "2024-03-29",
+            "2024-05-27",
+            "2024-06-19",
+            "2024-07-04",
+            "2024-09-02",
+            "2024-11-28",
+            "2024-12-25",
+            "2025-01-01",
+            "2025-01-09",
+            "2025-01-20",
+            "2025-02-17",
+            "2025-04-18",
+            "2025-05-26",
+            "2025-06-19",
+            "2025-07-04",
+            "2025-09-01",
+            "2025-11-27",
+            "2025-12-25",
+            "2026-01-01",
+            "2026-01-19",
+            "2026-02-16",
+            "2026-04-03",
+            "2026-06-19",
+            "2026-07-03"
+          ],
+          "same_date_missing": 0,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "^TNX",
+          "purpose": "Yahoo 10-year Treasury yield proxy; percentage points, divided by 100",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4207,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [
+            "2010-10-11",
+            "2016-11-11"
+          ],
+          "same_date_missing": 2,
+          "alignment": "Strictly previous date; max age 4 calendar days",
+          "unavailable_rows": 2,
+          "stale_rows": 1,
+          "max_accepted_age": 4.0
+        },
+        {
+          "symbol": "XLF",
+          "purpose": "Financial sector ETF",
+          "requested_start": "2010-01-01",
+          "requested_end": null,
+          "actual_start": "2010-01-04",
+          "actual_end": "2026-09-28",
+          "observations": 4209,
+          "missing_values": 0,
+          "duplicate_dates": 0,
+          "validation": "PASS (V4 validated)",
+          "auto_adjust": true,
+          "provider_rows": 4209,
+          "empty_quote_dates": [],
+          "same_date_missing": 0,
+          "alignment": "Exact stock date; missing stays NaN, no fill"
+        }
+      ],
+      "raw_rows": 4209,
+      "raw_start": "2010-01-04",
+      "raw_end": "2026-09-28",
+      "context_eligible_rows": 3955,
+      "common_rows": 3955,
+      "feature_count": 132,
+      "common_start": "2011-01-03",
+      "common_end": "2026-09-25",
+      "train_before": 3164,
+      "train_rows": 3163,
+      "test_rows": 791,
+      "train_start": "2011-01-03",
+      "train_end": "2023-07-31",
+      "test_start": "2023-08-02",
+      "test_end": "2026-09-25",
+      "purged_dates": [
+        "2023-08-01"
+      ],
+      "latest_training_target": "2023-08-01",
+      "temporal": {
+        "mae": 0.010454892322860378,
+        "rmse": 0.014825101429710635,
+        "r2": -0.06704019688194718,
+        "zero_mae": 0.01004134593605627,
+        "zero_rmse": 0.01439895843762647,
+        "direction": 0.5094816687737042,
+        "momentum": 0.506953223767383
+      },
+      "context": {
+        "mae": 0.010751932453604212,
+        "rmse": 0.015024681807846411,
+        "r2": -0.0959632713859675,
+        "zero_mae": 0.01004134593605627,
+        "zero_rmse": 0.01439895843762647,
+        "direction": 0.47914032869785084,
+        "momentum": 0.506953223767383
+      },
+      "deltas": {
+        "mae": 0.0002970401307438343,
+        "rmse": 0.0001995803781357757,
+        "r2": -0.02892307450402032,
+        "direction": -0.030341340075853318
+      },
+      "context_importance_total": 0.433598479179258,
+      "context_importances": [
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.023410738887628433
+        },
+        {
+          "Feature": "Sector_Return_1D",
+          "Importance": 0.021704559031233223
+        },
+        {
+          "Feature": "QQQ_Return_5D",
+          "Importance": 0.017403513331756902
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.017226620765642204
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.01611954970546706
+        },
+        {
+          "Feature": "QQQ_Return_1D",
+          "Importance": 0.015979933042910968
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.015882121111897383
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.012619042143924342
+        },
+        {
+          "Feature": "SPY_Return_5D",
+          "Importance": 0.011899453883552008
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.011817133967722902
+        },
+        {
+          "Feature": "Sector_Return_20D",
+          "Importance": 0.01095850188466207
+        },
+        {
+          "Feature": "Market_Adjusted_Return_1D",
+          "Importance": 0.01079472576079047
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.010782824858951552
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_5D",
+          "Importance": 0.010648701858147216
+        },
+        {
+          "Feature": "SPY_Volatility_5",
+          "Importance": 0.010554161653070675
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_50",
+          "Importance": 0.010011442813415618
+        },
+        {
+          "Feature": "Sector_Adjusted_Return_1D",
+          "Importance": 0.00928780419613387
+        },
+        {
+          "Feature": "VIX_Return_1D",
+          "Importance": 0.009253990623137712
+        },
+        {
+          "Feature": "Treasury_10Y_Level",
+          "Importance": 0.009172725476998584
+        },
+        {
+          "Feature": "Treasury_10Y_Change_1D",
+          "Importance": 0.008836638585801573
+        },
+        {
+          "Feature": "VIX_Return_5D",
+          "Importance": 0.008481011281443504
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_20D",
+          "Importance": 0.008461172526100421
+        },
+        {
+          "Feature": "Sector_Return_5D",
+          "Importance": 0.008099875110594422
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_50",
+          "Importance": 0.007790540953464875
+        },
+        {
+          "Feature": "SPY_Volatility_60",
+          "Importance": 0.007784461155469528
+        },
+        {
+          "Feature": "QQQ_Price_to_SMA_20",
+          "Importance": 0.00765810864984108
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_200",
+          "Importance": 0.007648062491681354
+        },
+        {
+          "Feature": "SPY_Return_20D",
+          "Importance": 0.00752935530614309
+        },
+        {
+          "Feature": "Stock_SPY_Beta_60",
+          "Importance": 0.00747347674251482
+        },
+        {
+          "Feature": "SPY_Volatility_Ratio_5_20",
+          "Importance": 0.007349689747525598
+        },
+        {
+          "Feature": "Sector_Volatility_20",
+          "Importance": 0.007196461493152868
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_20",
+          "Importance": 0.006917066491684173
+        },
+        {
+          "Feature": "Stock_vs_QQQ_Return_20D",
+          "Importance": 0.006891865651130877
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_5D",
+          "Importance": 0.006829205465204206
+        },
+        {
+          "Feature": "QQQ_Return_20D",
+          "Importance": 0.006616532723630374
+        },
+        {
+          "Feature": "VIX_Percentile_252",
+          "Importance": 0.006576777764853489
+        },
+        {
+          "Feature": "SPY_Volatility_20",
+          "Importance": 0.006560449868378549
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_60",
+          "Importance": 0.006505184995676363
+        },
+        {
+          "Feature": "Stock_SPY_Beta_20",
+          "Importance": 0.006437266848440372
+        },
+        {
+          "Feature": "Stock_Sector_Correlation_20",
+          "Importance": 0.006426054620793947
+        },
+        {
+          "Feature": "Stock_SPY_Correlation_60",
+          "Importance": 0.006330264793809645
+        },
+        {
+          "Feature": "Stock_to_Sector_Volatility_20",
+          "Importance": 0.006026541203978868
+        },
+        {
+          "Feature": "Stock_vs_SPY_Return_20D",
+          "Importance": 0.005846417427425361
+        },
+        {
+          "Feature": "Stock_to_SPY_Volatility_20",
+          "Importance": 0.005798452283475366
+        }
+      ],
+      "top25": [
+        {
+          "Feature": "Treasury_10Y_vs_MA_20",
+          "Importance": 0.023410738887628433
+        },
+        {
+          "Feature": "Drawdown_From_252D_Peak",
+          "Importance": 0.022534025435717794
+        },
+        {
+          "Feature": "Sector_Return_1D",
+          "Importance": 0.021704559031233223
+        },
+        {
+          "Feature": "Return_Lag_5",
+          "Importance": 0.018253650192537964
+        },
+        {
+          "Feature": "QQQ_Return_5D",
+          "Importance": 0.017403513331756902
+        },
+        {
+          "Feature": "Treasury_10Y_Change_5D",
+          "Importance": 0.017226620765642204
+        },
+        {
+          "Feature": "Return_Lag_3",
+          "Importance": 0.016265323909996743
+        },
+        {
+          "Feature": "VIX_Level_Normalized",
+          "Importance": 0.01611954970546706
+        },
+        {
+          "Feature": "QQQ_Return_1D",
+          "Importance": 0.015979933042910968
+        },
+        {
+          "Feature": "Sector_Price_to_SMA_20",
+          "Importance": 0.015882121111897383
+        },
+        {
+          "Feature": "Overnight_Gap",
+          "Importance": 0.014556479232494176
+        },
+        {
+          "Feature": "Return_5D_Acceleration",
+          "Importance": 0.014364736039925845
+        },
+        {
+          "Feature": "Return_Lag_1",
+          "Importance": 0.013734268962311844
+        },
+        {
+          "Feature": "SMA_50_to_200",
+          "Importance": 0.012991409989265961
+        },
+        {
+          "Feature": "Price_to_SMA_200",
+          "Importance": 0.012902980849085675
+        },
+        {
+          "Feature": "SPY_Price_to_SMA_20",
+          "Importance": 0.012619042143924342
+        },
+        {
+          "Feature": "SPY_Return_5D",
+          "Importance": 0.011899453883552008
+        },
+        {
+          "Feature": "VIX_Price_to_SMA_20",
+          "Importance": 0.011817133967722902
+        },
+        {
+          "Feature": "Sector_Return_20D",
+          "Importance": 0.01095850188466207
+        },
+        {
+          "Feature": "Market_Adjusted_Return_1D",
+          "Importance": 0.01079472576079047
+        },
+        {
+          "Feature": "SPY_Return_1D",
+          "Importance": 0.010782824858951552
+        },
+        {
+          "Feature": "Volume_Change",
+          "Importance": 0.010672494899587994
+        },
+        {
+          "Feature": "Stock_vs_Sector_Return_5D",
+          "Importance": 0.010648701858147216
+        },
+        {
+          "Feature": "SPY_Volatility_5",
+          "Importance": 0.010554161653070675
+        },
+        {
+          "Feature": "Return_Lag_2",
+          "Importance": 0.010364194170048458
+        }
+      ],
+      "descriptive": {
+        "paired_return_rows": 4208,
+        "stock_spy_correlation": 0.7272321971463229,
+        "stock_sector_correlation": 0.9062847100217539,
+        "vix_environments": {
+          "low_trailing_vix": {
+            "count": 1347,
+            "mean": 0.0007189001985544495
+          },
+          "high_trailing_vix": {
+            "count": 902,
+            "mean": 0.0005358807140374191
+          }
+        },
+        "note": "Reporting only; prior-date trailing VIX percentile thresholds 0.25/0.75; no causal claims."
+      },
+      "training_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9989044910889867
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.99709815814929
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.9956991683199324
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9805798376618204
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9811188723750104
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9826306987474995
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9931006148729243
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.997389715577485
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9872800540961573
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.9957762510413962
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995685321750807
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "full_sample_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [
+          {
+            "feature_a": "Return_5D",
+            "feature_b": "Rolling_Mean_Return_5",
+            "correlation": 0.9990207912074289
+          },
+          {
+            "feature_a": "Return_20D",
+            "feature_b": "Rolling_Mean_Return_20",
+            "correlation": 0.9973421027458615
+          },
+          {
+            "feature_a": "Return_60D",
+            "feature_b": "Rolling_Mean_Return_60",
+            "correlation": 0.9959636390113799
+          },
+          {
+            "feature_a": "Price_to_SMA_10",
+            "feature_b": "Price_to_EMA_10",
+            "correlation": 0.9806321964923608
+          },
+          {
+            "feature_a": "Price_to_SMA_20",
+            "feature_b": "Price_to_EMA_20",
+            "correlation": 0.9811716352860794
+          },
+          {
+            "feature_a": "Price_to_SMA_50",
+            "feature_b": "Price_to_EMA_50",
+            "correlation": 0.9824038517963691
+          },
+          {
+            "feature_a": "Distance_From_20D_High",
+            "feature_b": "Drawdown_From_20D_Peak",
+            "correlation": 0.9917598053339342
+          },
+          {
+            "feature_a": "Distance_From_60D_High",
+            "feature_b": "Drawdown_From_60D_Peak",
+            "correlation": 0.9970453449738501
+          },
+          {
+            "feature_a": "Positive_Return_Ratio_20",
+            "feature_b": "Negative_Return_Ratio_20",
+            "correlation": -0.9898424323506629
+          },
+          {
+            "feature_a": "Calendar_Days_From_Month_Start",
+            "feature_b": "Calendar_Days_To_Month_End",
+            "correlation": -0.995851069108602
+          },
+          {
+            "feature_a": "Calendar_Days_From_Quarter_Start",
+            "feature_b": "Calendar_Days_To_Quarter_End",
+            "correlation": -0.9995733704808725
+          }
+        ],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "context_only_audit": {
+        "exact_duplicates": [],
+        "constants": [],
+        "near_zero_variance": [],
+        "high_correlations": [],
+        "correlation_threshold": 0.98,
+        "variance_threshold": 1e-12
+      },
+      "causality_checks": [
+        {
+          "cutoff": "2015-06-15",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-06-30",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        },
+        {
+          "cutoff": "2015-12-31",
+          "stock_perturbation": "PASS",
+          "context_perturbation": "PASS",
+          "prefix": "PASS"
+        }
+      ],
+      "scale_invariance": "PASS",
+      "identical_comparison_dates": "PASS",
+      "finite_matrices": "PASS"
+    }
+  },
+  "cache": {
+    "logical_requests": 15,
+    "provider_downloads": 6
+  },
+  "rate_unit_verification": {
+    "comparisons": [
+      {
+        "date": "2024-01-02",
+        "yahoo_tnx": 3.946000099182129,
+        "treasury_10y_percent": 3.95
+      },
+      {
+        "date": "2024-01-03",
+        "yahoo_tnx": 3.9070000648498535,
+        "treasury_10y_percent": 3.91
+      },
+      {
+        "date": "2024-01-04",
+        "yahoo_tnx": 3.990999937057495,
+        "treasury_10y_percent": 3.99
+      },
+      {
+        "date": "2024-01-05",
+        "yahoo_tnx": 4.041999816894531,
+        "treasury_10y_percent": 4.05
+      }
+    ],
+    "units": "Yahoo percentage points; divide by 100 to decimal annual yield",
+    "reference": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2024",
+    "limitation": "Cboe/Yahoo proxy and Treasury CMT are different methodologies; check establishes scale, not identical measurements."
+  }
+}
